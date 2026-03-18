@@ -1,23 +1,24 @@
-# Milestone Blueprint
-
-### Title
-<!-- Use a narrative, story-driven title. -->
-`[Version/Identifier]: [Narrative Goal]` 
-*(e.g., "M1: The Walking Skeleton" or "v1.2: The Billing Engine")*
+# Milestone: [Epic Name]
 
 ### Narrative Goal
-<!-- A short paragraph explaining the overarching theme of this development phase. -->
-
+<!-- Describe the overarching objective of this Epic. Why are we building this now? -->
 
 ### Definition of Done (DoD)
-<!-- A definitive, real-world outcome described from a user or system perspective. The milestone is NOT complete until this is true. -->
+<!-- What is the tangible, real-world state of the system when this Epic is finished? -->
+- [ ] [e.g., Users can log in and manage their profiles.]
+- [ ] [e.g., CI/CD pipeline is fully automated.]
 
+---
 
-### Target Timeframe
-<!-- A flexible target to maintain momentum. -->[e.g., End of Q3, or Mid-October]
+### Tasks (Issue Index)
+<!-- 
+    List the Markdown files within this folder that represent the Issues. 
+    Each Issue will be its own branch and its own PR.
+-->
 
-### Key Deliverables / Epic Issues
-<!-- List the high-level Epics or primary issues that must be included in this milestone to achieve the DoD. -->
-1. 
-2. 
-3.
+- [ ] **Issue #...: [Task Name]** -> [Link to file](./#-isue.md)
+
+- [ ] **Issue #...: [Task Name]** -> [Link to file](./#-issue.md)
+
+---
+*Maintenance Note: This folder serves as the offline backup of this Epic's requirements. When creating tickets in GitHub, copy the content from the individual Issue files.*

@@ -68,6 +68,12 @@ Clarity starts with a well-defined task. Every issue created in this project mus
 3.  **Correct Fields:** Assign the correct `priority`, `type`, and `module` labels.
 4.  **Milestone:** Assign the issue to the relevant milestone.
 
+An Issue is a **single Task** that belongs to a Milestone. To maintain momentum, every Task follows this lifecycle:
+
+a.  **Branching:** One Issue = One Branch. Create a branch from `main` using the convention `[type]/[issue-id]-[description]`.
+b.  **Atomic Commits:** Fulfill the To-Do list using **Atomic Commits**. Each commit should be a single logical change that moves the task closer to completion.
+c.  **Pull Request:** Once all To-Dos are checked and Acceptance Criteria are met, create a PR to squash and merge that specific Task back into `main`.
+
 ---
 
 ## 3. Branching & Merge Policy
@@ -132,12 +138,21 @@ A commit is the smallest atomic unit of work. A clean commit history is essentia
 A milestone is a **chapter in the project's story**, representing a significant, cohesive phase of development with a clear, narrative goal.
 
 *   **1. A Clear, Narrative Goal:** The title and description should tell a story.
-    *   *Examples:* `M1: The Walking Skeleton`, `M2: The Core Engine (Headless)`, `M3: The Minimum Viable Interface`
+    *   *Example:* `M1: The Walking Skeleton`
 
 *   **2. A Definitive "Definition of Done":** A milestone is complete when it achieves a tangible outcome.
     *   *Example for "M3: The Minimum Viable Interface":* "A user can log in, upload a document, ask a question about it, and get a useful answer. The core end-to-end user flow is functional and deployed."
 
-*   **3. Focused and Cohesive:** All issues within a milestone should directly contribute to its narrative goal.
+*   **3. Focused and Cohesive:** All issues within a milestone should directly contribute to its narrative goal.  It should not be a random collection of unrelated bugs and features.
+
+*   **4. Time-Bound (but flexible):** While not a rigid sprint, a milestone should have a target completion timeframe (e.g., "End of Q3") to maintain project momentum and manage expectations.
+
+A milestone is a high-level **Epic**. It represents a significant feature or a phase of the project. It acts as a parent container for a group of related **Issues (Tasks)**.
+
+*   **1. Narrative Title:** The Milestone title should scream the objective of the phase. 
+    *   *Example:* `M2: User Authentication System`
+*   **2. Definition of Done (DoD):** A milestone is complete only when the high-level objective is met and verified.
+*   **3. List of Issues (Tasks):** The "How". All issues within a milestone should directly contribute to its narrative goal.  It should not be a random collection of unrelated bugs and features.
 
 ---
 
