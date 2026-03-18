@@ -1,0 +1,22 @@
+# ---------------------------------------------------------
+# COMMIT MESSAGE GUIDE (Conventional Commits)
+# ---------------------------------------------------------
+# Line 1: <type>(<scope>): <subject>
+#   - <type>: feat, fix, docs, style, refactor, test, chore, perf
+#     (Add '!' after type for breaking changes: feat!(api): ...)
+#   - <scope>: The logical domain (e.g., auth, db, ui). Optional.
+#   - <subject>: Imperative mood ("add" not "added"). Max 50 chars.
+#
+# Line 2: MUST BE BLANK
+#
+# Line 3+: <body> (Optional)
+#   - Explain *why* and *what*, not *how*. 
+#   - Wrap at 72 characters.
+#   - For complex changes, use a bulleted list starting with verbs.
+#
+# Line after body: MUST BE BLANK
+#
+# Final Lines: <footer> (Optional)
+#   - Use for "BREAKING CHANGE: <description>" 
+#   - Use for "Resolves #<issue_number>"
+# ---------------------------------------------------------
