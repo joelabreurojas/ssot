@@ -2,11 +2,22 @@
 
 To protect the stability of our `main` branch, we follow a strict branching and merging policy. The branch serves as the workspace for a single unit of work.
 
+---
+
+> [!IMPORTANT]
+> Before starting any task:
+> 1. Ensure you have pulled the latest changes from `main`.
+> 2. Create your branch: `git checkout -b [type]/[issue-id]-[description]`.
+
+---
+
 ### 1. The Golden Rule
 **No direct commits to `main`.** All work must happen on a feature branch.
 
+---
+
 ### 2. Branch Naming Convention
-To maintain a clear link between our planning system (GitHub) and our version control (Git), branches must follow this pattern:
+To maintain a clear link between our planning system and our version control, branches must follow this metadata-rich pattern:
 
 `[type]/[issue-id]-[short-description]`
 
@@ -16,11 +27,17 @@ To maintain a clear link between our planning system (GitHub) and our version co
 
 **Example:** `feat/12-user-auth-service`
 
-### 3. One Issue = One Branch
-To maintain atomic logic and prevent "hostage PRs," each branch should solve exactly one task. While it may feel repetitive to identify the task again in the branch name, this metadata is essential for developers working in the terminal to identify the context of the code.
+---
+
+### 3. One Issue = One Branch (Atomic Logic)
+To prevent "hostage PRs" and unmanageable merge conflicts, each branch must solve exactly one Issue/Task. 
+*   Never bundle unrelated changes into a single branch.
+*   If you discover a separate bug while working on a feature, do not fix it in the current branch. Instead, create a new Issue and a separate branch for that fix.
+
+---
 
 ### 4. Special Branches
-These branches are "free" from the standard Milestone Execution Order, but must still adhere to our core standards (Atomic Commits, CI Checks, and PR Reviews).
+These branches are "free" from the standard Execution Order, but must still adhere to our core standards (Atomic Commits, CI Checks, and PR Reviews).
 
 *   **Spike/Research (`research/`):** Used for investigations or testing new technologies.
     *   **The Goal:** To answer a specific question or prove a concept (e.g., "Is this library compatible with our system?").
@@ -35,6 +52,9 @@ These branches are "free" from the standard Milestone Execution Order, but must 
     *   *Freedom:* Often not planned in the initial Milestone roadmap.
     *   *Rule:* Must not change system behavior and must have 100% test coverage.
 
+---
+
 ### 5. Merge Strategy: Squash and Merge
-We exclusively use the **Squash and Merge** option on GitHub. 
-*   **Clarity:** It ensures the `main` history is a clean, high-level timeline where one commit equals one completed Issue/Task.
+We exclusively use the **Squash and Merge** strategy on GitHub. 
+*   **The Benefit:** It compresses all incremental, work-in-progress commits from the feature branch into a single, clean, high-level commit on the `main` branch. 
+*   **The Outcome:** The history of the `main` branch remains a perfectly clean timeline of completed Tasks, rather than a messy list of "wip" and "fixed typo" commits. 
