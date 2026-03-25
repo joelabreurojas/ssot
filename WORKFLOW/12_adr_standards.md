@@ -8,7 +8,7 @@ While the RFD is the initial blueprint, ADRs record the **pivots and refinements
 
 ### 📂 The ADR Directory
 
-All records are stored in `docs/ADRs/` to serve as a chronological history of the project's evolution.
+All records are stored in `docs/ADR/` to serve as a chronological history of the project's evolution.
 
 1.  **File Naming:** Use a sequential three-digit prefix followed by a slug.
     *   *Format:* `NNN_short_description.md`
@@ -19,7 +19,7 @@ All records are stored in `docs/ADRs/` to serve as a chronological history of th
 
 ### 📝 Key Standards (The Anatomy of an ADR)
 
-Every ADR must follow the `adr_template.md` (found in `EXAMPLES/docs/`) and include:
+Every ADR must follow the `000_template.md` (found in `EXAMPLES/docs/ADR`) and include:
 
 1.  **Status:**
     *   **Proposed:** The decision is currently under review in a Pull Request.

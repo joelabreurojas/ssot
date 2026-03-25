@@ -30,6 +30,7 @@ Every project must initialize its RFD folder with the following structure:
 
 ### 🛠️ Maintenance & Evolution
 
+*   **Logical States:** To maintain simplicity, the state is handled in the **`README.md`** and it will change from **Proposed** to **Accepted** before the **Squash and Merge** with main.
 *   **Updating Diagrams:** When the architecture or data model evolves, update the Mermaid code within the relevant `.md` file. 
 *   **PR Documentation:** Use the **Pull Request description** to explain why the architectural pivot was necessary.
 *   **Keep in Sync:** The RFD must always be aligned with the PRD. If a technical constraint requires a change in product behavior, the PRD must be updated first.

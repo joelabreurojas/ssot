@@ -30,6 +30,7 @@ Every project must initialize its PRD folder with the following structure:
 ### 🛠 Maintenance & Changes
 Because the PRD is the foundation for the Technical Design (RFD), changes must be handled with discipline:
 
+*   **Logical States:** To maintain simplicity, the state is handled in the **`README.md`** and it will change from **Proposed** to **Accepted** before the **Squash and Merge** with main.
 *   **How to change:** If a requirement evolves, update the relevant `.md` file in `docs/PRD/` via a **Pull Request**.
 *   **Explain the "Why":** Use the **Pull Request description** to explain the rationale for the change. Do not add "Change Logs" inside the requirements files themselves.
 *   **The Ripple Effect:** Once a PRD change is merged, you must immediately check the **RFD** to see if the technical design needs to be updated to match the new requirements.
