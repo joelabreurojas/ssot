@@ -23,5 +23,3 @@ Each story follows the format: **As a [Persona], I want to [Action] so that [Val
     1. [ ] [Specific, testable condition 1]
 *   **Visual Reference:** [Link to VIEW or Sketch](../../views/00_template.md)
 
----
-*Note: These stories drive the creation of Issues in the Planning Phase.*
