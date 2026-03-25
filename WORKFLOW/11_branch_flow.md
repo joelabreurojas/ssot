@@ -21,7 +21,7 @@ To maintain a clear link between our planning system and our version control, br
 
 `[type]/[issue-id]-[short-description]`
 
-*   **Type:** Use the types defined in [Labeling System](./08_labeling_system.md) (e.g., `feat`, `fix`, `chore`, `research`).
+*   **Type:** Use the types defined in [Labeling System](./09_labeling_system.md) (e.g., `feat`, `fix`, `chore`, `research`).
 *   **Issue ID:** The numeric ID assigned by the issue tracker.
 *   **Description:** 2-3 words summarizing the task.
 

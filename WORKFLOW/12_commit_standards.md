@@ -21,7 +21,7 @@ type(scope): subject
 ```
 
 #### **The Title (The First Line)**
-*   **Type:** Describes the *nature* of the work. Use the types defined in the [Labeling System](./08_labeling_system.md) (e.g., `feat`, `fix`, `chore`, `refactor`).
+*   **Type:** Describes the *nature* of the work. Use the types defined in the [Labeling System](./09_labeling_system.md) (e.g., `feat`, `fix`, `chore`, `refactor`).
 *   **Scope:** A **free-form topic** identifying the logical area of the code being changed (e.g., `sidebar`, `api-auth`, `landing-page`). Do not use file paths or extensions.
 *   **Breaking Change:** Add a `!` after the type (e.g., `feat!(ui):`) to signal an incompatible change.
 *   **Subject:** A short, **lowercase**, imperative-mood summary.

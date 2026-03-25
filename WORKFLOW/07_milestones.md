@@ -34,4 +34,4 @@ Every Milestone acts as a parent container for a group of related **Issues (Task
 
 ### 🚀 Selecting Work
 
-When a developer is ready for a new task, they pick the next available Issue within the active Milestone based on the **Execution Order** and **Dependency** rules. This ensures the foundation is always built before the roof. (See [Issue Standards](./07_issue_standards.md)).
+When a developer is ready for a new task, they pick the next available Issue within the active Milestone based on the **Execution Order** and **Dependency** rules. This ensures the foundation is always built before the roof. (See [Issue Standards](./08_issue_standards.md)).

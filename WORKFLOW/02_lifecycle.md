@@ -20,9 +20,9 @@ Once the technical "How" is defined, we break the work into manageable, trackabl
 ### Phase 3: Execution & Tracking
 The actual development phase where the system is built according to the standards established in the previous phases.
 
-*   **Coding:** Developers follow the [Branch Flow](./10_branch_flow.md), working on one Issue at a time.
-*   **Atomic Progress:** Work is saved through [Atomic Commits](./11_commit_standards.md) that mirror the Task's To-Do list.
-*   **Refinement (ADRs):** When significant technical pivots occur during coding that deviate from the RFD, they are recorded as [Architecture Decision Records](./12_adr_standards.md).
+*   **Coding:** Developers follow the [Branch Flow](./11_branch_flow.md), working on one Issue at a time.
+*   **Atomic Progress:** Work is saved through [Atomic Commits](./12_commit_standards.md) that mirror the Task's To-Do list.
+*   **Refinement (ADRs):** When significant technical pivots occur during coding that deviate from the RFD, they are recorded as [Architecture Decision Records](./13_adr_standards.md).
 
 ### Phase 4: Review & Delivery
 The final gate before code reaches the production environment.

@@ -11,6 +11,7 @@ The goal of this process is to provide clarity, not complexity. We favor simple,
 **Phase 0: Mindset & Rules**
 - [**Core Philosophy**](./01_philosophy.md): The mindset and principles guiding our work.
 - [**Project Lifecycle**](./02_lifecycle.md): The step-by-step development journey.
+- [**Community & Organization**](./03_community_standards.md): Handling people, governance, and releases.
 
 **Phase 1: Inception & Design**
 - [**Product Requirements (PRD)**](./03_prd_standards.md): Defining the "What" and the "Why."

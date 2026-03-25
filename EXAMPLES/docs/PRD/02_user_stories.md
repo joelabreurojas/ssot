@@ -11,7 +11,7 @@ Each story follows the format: **As a [Persona], I want to [Action] so that [Val
 *   **Acceptance Criteria:**
     1. [ ] [Specific, testable condition 1]
     2. [ ] [Specific, testable condition 2]
-*   **Visual Reference:** [Link to VIEW or Sketch](../../views/00_template.md)
+*   **Visual Reference:** [Link to VIEW or Sketch](../../views/README.md)
 
 ---
 
@@ -21,5 +21,5 @@ Each story follows the format: **As a [Persona], I want to [Action] so that [Val
 *   **Priority:** [High / Medium / Low]
 *   **Acceptance Criteria:**
     1. [ ] [Specific, testable condition 1]
-*   **Visual Reference:** [Link to VIEW or Sketch](../../views/00_template.md)
+*   **Visual Reference:** [Link to VIEW or Sketch](../../views/README.md)
 

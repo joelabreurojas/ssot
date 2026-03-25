@@ -11,7 +11,7 @@ The "idea freezer." Contains all potential future work and ideas that are *not* 
 
 ### 2. ✅ Ready
 The immediate to-do list for the current Milestone.
-*   **Entry Criteria:** The task is essential for the active Milestone and has a complete [Anatomy of a Perfect Issue](./07_issue_standards.md).
+*   **Entry Criteria:** The task is essential for the active Milestone and has a complete [Anatomy of a Perfect Issue](./08_issue_standards.md).
 *   **Key Rule:** When a developer is free, they MUST pull the task with the **lowest Execution Order** from the top of this column.
 *   **Exit Criteria:** A developer assigns the issue to themselves and moves it to `In Progress`.
 

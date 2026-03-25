@@ -24,3 +24,8 @@ Code is a team effort. Every contribution requires at least one formal peer appr
 
 ### 6. Documentation as a First-Class Citizen
 Code tells you *how* the system works; documentation tells you *why* it was built that way. We treat our documentation (PRDs, RFDs, ADRs) with the same discipline as our source code. If a change isn't reflected in the documentation, the task is not "Done."
+
+### 7. Blameless Culture
+Mistakes are an inevitable part of building complex systems. We are not interested in identifying *who* made an error; we are interested in identifying *how* the system allowed the error to occur. 
+*   **The Mindset:** If a developer makes a mistake, it is a failure of our documentation, our tooling, or our automated checks (CI). 
+*   **The Action:** We focus on **mitigation and prevention**. Every mistake is an opportunity to improve our "insurance" layers (tests, linters, or RFD clarity) to ensure that same error can never happen again.

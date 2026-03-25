@@ -37,7 +37,7 @@ Reviewers are the guardians of the codebase.
 
 #### **Step 3: The Squash and Merge**
 Once approved and CI passes, the PR is merged using the **Squash and Merge** strategy. 
-*   **Final Link:** Per our [Commit Standards](./11_commit_standards.md), the final commit title in `main` must include the PR ID (e.g., `feat(ui): add new widget (#45)`).
+*   **Final Link:** Per our [Commit Standards](./12_commit_standards.md), the final commit title in `main` must include the PR ID (e.g., `feat(ui): add new widget (#45)`).
 
 ---
 
