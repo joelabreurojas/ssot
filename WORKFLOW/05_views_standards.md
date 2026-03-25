@@ -38,4 +38,4 @@ This directory serves as a gallery for sketches, wireframes, or mockups.
 Visual designs are part of the project specification and must follow the same version control discipline as text documents:
 
 *   **Design Changes:** If the UI layout changes significantly, the asset in `docs/VIEWS/` must be updated via a **Pull Request**.
-*   **Approval:** Views must be reviewed alongside the PRD/RFD to ensure technical feasibility and product alignment before Phase 2 (Execution) begins.
+*   **Approval:** Views must be reviewed alongside the PRD/RFD to ensure technical feasibility and product alignment before Phase 3 (Execution) begins.
