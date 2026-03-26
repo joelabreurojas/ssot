@@ -1,29 +1,28 @@
 ---
 name: "🐞 Bug Report"
-about: "Report a software defect or unexpected behavior."
+about: "Report a software defect or unintended behavior."
 title: ""
 labels: ["type:bug"]
 assignees: ''
 ---
 
 ### 🚨 Describe the Bug
-<!-- A clear and concise description of what the bug is and why it is problematic. -->
+<!-- A clear and concise description of the failure. -->
 
 
 ### 🔁 Steps to Reproduce
-<!-- Exact, step-by-step instructions required to trigger the bug. -->
+<!-- Exact instructions to trigger the bug. -->
 1. Go to '...'
 2. Click on '....'
-3. Scroll down to '....'
-4. See error: '...'
+3. See error: '...'
 
 ### 🎯 Expected Behavior
-<!-- A clear and concise description of what you expected to happen. -->
+<!-- What should have happened? -->
 
 
 ### 💥 Actual Behavior
-<!-- A clear and concise description of what actually happened. Include error logs or screenshots if possible. -->
+<!-- What actually happened? (Include error logs/screenshots if possible) -->
 
 
 ### 🖥️ Environment (Optional)
-<!-- e.g., OS: Ubuntu 22.04, Browser: Chrome 114, Version: v1.2.0 -->
+<!-- e.g., OS: Ubuntu 24.04, Browser: Chrome, Version: v1.2.0 -->

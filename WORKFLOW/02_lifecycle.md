@@ -63,6 +63,6 @@ Once the technical "How" for the current module is approved:
 ---
 
 ### 🚦 The Approval Gate
-Documents in Phase 1 (PRD, RFD, ADR) follow a strict status lifecycle:
+Documents in Phase 1 follow a strict status lifecycle:
 *   **Proposed:** The document is on a feature branch and under review in a PR.
 *   **Accepted:** The PR is approved and merged into `main`. Implementation can only begin on "Accepted" specifications.

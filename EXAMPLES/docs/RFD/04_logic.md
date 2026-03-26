@@ -1,67 +1,81 @@
 # Logic & Services (The Application Core)
 
-This document defines the pure business logic, the domain rules, and the service orchestrators that make up the heart of the application. This layer must remain entirely agnostic to the external interfaces (HTTP, WebSockets) and the specific database implementation (SQL, NoSQL).
+This document outlines the pure business logic, domain services, and process orchestrators that drive the system. It defines how we enforce business rules and manage complex workflows.
 
 ---
 
 ## 1. Core Domain Services
 <!-- 
-    Identify the primary "Workers" or "Orchestrators" in your system.
-    What are the specialized services that handle specific business domains?
-    (e.g., UserService, PaymentProcessor, InventoryManager, RAGOrchestrator).
+    Identify the primary "Orchestrators" or "Service Classes".
+    What are the specialized workers that handle specific business logic?
+    (e.g., UserService, PaymentOrchestrator, NotificationManager).
 -->
 
-### Service: `[ServiceName, e.g., OrderFulfillmentService]`
-*   **Responsibility:**[What is the single, focused job of this service? e.g., "Manages the lifecycle of an order from payment confirmation to shipping dispatch."]
-*   **Key Dependencies:**[What other core services or repositories does this service need to do its job? e.g., PaymentGatewayPort, InventoryRepository, NotificationService.]
+### Service: `[ServiceName, e.g., FulfillmentService]`
+*   **Responsibility:** [Describe the single, focused job of this service.]
+*   **Key Dependencies:** [List core services or repositories this service interacts with.]
 *   **Primary Workflows / Use Cases:**
-    <!-- Describe the high-level logic for the most important actions this service performs. -->
-    1.  `[Action Name, e.g., ProcessNewOrder(order_details)]`:
-        *   *Step 1:* Validate payment status via `PaymentGateway`.
-        *   *Step 2:* Reserve stock via `InventoryManager`. If stock is unavailable, raise `InsufficientStockError`.
-        *   *Step 3:* Persist the new order state via `OrderRepository`.
-        *   *Step 4:* Dispatch 'OrderCreated' event via `NotificationService`.
+    <!-- Describe the high-level logic for critical actions. -->
+    1.  `[Action Name, e.g., ProcessOrder(data)]`:
+        *   *Step 1:* [Logic step, e.g., Validate inventory availability]
+        *   *Step 2:* [Logic step, e.g., Calculate tax and final price]
+        *   *Step 3:* [Logic step, e.g., Trigger payment transaction]
+        *   *Step 4:* [Logic step, e.g., Dispatch 'OrderProcessed' event]
 
 ### Service: `[ServiceName]`
-*   **Responsibility:**[Description]
-*   **Key Dependencies:** [List dependencies]
-*   **Primary Workflows / Use Cases:**
+*   **Responsibility:** [Description]
+*   **Primary Workflows:** [Description]
     1.  `[Action Name]`:
         *   *Step 1:* [Logic step]
-        *   *Step 2:* [Logic step]
 
 ---
 
-## 2. Business Rules & Validation
+## 2. Business Rules & Domain Logic
 <!-- 
-    What are the absolute, non-negotiable rules of your business domain? 
-    These rules must be enforced by the services before any data is saved or action is taken.
+    Define the non-negotiable rules of the business. 
+    These are the 'if/then' constraints that must be true at all times.
 -->
 
-*   **[Rule Name, e.g., User Age Restriction]:**[e.g., "A user must be 18 years or older to register for a merchant account. This is calculated based on their provided Date of Birth during registration."]
-*   **[Rule Name, e.g., Subscription Limits]:**[e.g., "A 'Basic' tier user can only create a maximum of 3 active projects. The `ProjectService` must verify the current count against the user's tier before allowing a new creation."]
-*   **[Rule Name, e.g., Password Complexity]:**[e.g., "Passwords must be at least 12 characters, containing at least one symbol and one number. Enforced at the schema validation level before hitting the `AuthService`."]
+*   **[Rule Name, e.g., Tiered Access]:** [e.g., "Users in the 'Basic' tier cannot create more than 5 resources per month. This check must occur before the creation logic begins."]
+*   **[Rule Name, e.g., Data Retention]:** [e.g., "Audit logs must be kept for 7 years and are immutable after creation."]
+*   **[Rule Name]:** [Description of the business constraint].
 
 ---
 
-## 3. Background Jobs & Asynchronous Logic
+## 3. Asynchronous Processes & Background Jobs
 <!-- 
-    Not all logic happens instantly during a user request. 
-    Define the processes that happen in the background (e.g., via Celery, Cron jobs, or Event queues).
+    Define logic that happens outside the main request-response cycle 
+    (e.g., Cron jobs, Message Queue workers, Scheduled tasks).
 -->
 
-| Job Name / Task | Trigger | Responsibility | Frequency / SLA |
+| Task Name | Trigger | Responsibility | Priority / SLA |
 | :--- | :--- | :--- | :--- |
-| **[e.g., Generate Daily Reports]** | Scheduled (Cron) | Aggregates daily sales data and emails a PDF to admins. | Runs daily at 02:00 UTC. |
-| **[e.g., Process Video Upload]** | Event-Driven (Queue) | Takes a raw uploaded video, compresses it, and generates thumbnails. | Triggered immediately upon upload; must complete within 5 minutes. |
-| **[e.g., Cleanup Expired Sessions]**| Scheduled (Cron) | Deletes session tokens older than 30 days from the database to reclaim space. | Runs weekly on Sunday. |
+| **[e.g., Daily Cleanup]** | Scheduled (Cron) | Deletes expired session tokens from the cache. | Low (Daily at 03:00) |
+| **[e.g., Image Processor]** | Event (Queue) | Generates thumbnails for uploaded profile pictures. | High (Within 60s) |
+| **[Task Name]** | [Trigger] | [Job Description] | [SLA] |
 
 ---
 
-## 4. Error Handling & State Management
+## 4. State Machines & Lifecycle Logic
 <!-- 
-    How does the core logic communicate failures? 
-    Do you use custom Domain Exceptions? Do you return standard Error/Result objects (like in Rust/Go)?
+    If your entities have complex states (e.g., Order: DRAFT -> PAID -> SHIPPED), 
+    define the valid transitions and the logic that triggers them.
 -->
-*   **Exception Strategy:**[e.g., "All business rule violations raise specific sub-classes of `AppException` (e.g., `InsufficientFundsError`, `UserNotFoundError`). These are caught at the interface layer and translated into standard HTTP/GraphQL errors."]
-*   **State Transitions:**[If your entities have complex lifecycles, define them here. e.g., "An Invoice moves from `DRAFT` -> `ISSUED` -> `PAID` or `VOIDED`. An Invoice cannot move directly from `DRAFT` to `PAID`."]
+
+```mermaid
+stateDiagram-v2
+    [*] --> [State A]
+    [State A] --> [State B] : [Action/Trigger]
+    [State B] --> [*] : [Action/Trigger]
+    [State B] --> [ErrorState] : [Failure]
+```
+
+---
+
+## 5. Domain Exceptions
+<!-- 
+    How does the logic communicate business-level failures?
+    Define custom error types that the Interface layer can translate for the user.
+-->
+*   **`[ExceptionName, e.g., InsufficientFundsError]`**: Raised when [Condition].
+*   **`[ExceptionName, e.g., EntityLockedError]`**: Raised when [Condition].

@@ -1,27 +1,32 @@
-# Product Requirements Document: [Project Name]
+# Product Requirements Document (PRD): [Project Name]
 
 ## 1. Project Status
 *   **Current State:** [Proposed | Accepted]
 *   **Last Updated:** [YYYY-MM-DD]
 
+---
 
 ## 2. Executive Summary
 <!-- 
-    A high-level "elevator pitch" for the project. 
-    - What is it? 
-    - Who is it for? 
-    - What primary problem does it solve? 
+    The "Elevator Pitch" for the project. 
+    Briefly describe:
+    - What is the product?
+    - Who is it for?
+    - What is the primary problem it solves?
 -->
 [Insert brief project summary here]
 
+---
+
 ## 3. Modular Index
 <!-- 
-    The PRD is split into focused files to ensure clarity and easy review. 
+    The PRD is split into focused files to ensure clarity and enable 
+    atomic reviews in Pull Requests. 
 -->
-1. [**Vision & Purpose**](./01_vision.md): The long-term impact and target audience.
-2. [**User Stories**](./02_user_stories.md): Narrative requirements and acceptance criteria.
-3. [**Functional & Non-Functional Requirements**](./03_requirements.md): System capabilities and performance targets.
+1. [**Vision & User Personas**](./01_vision.md): The long-term "Why" and the "Who."
+2. [**User Stories**](./02_user_stories.md): Narrative requirements and detailed acceptance criteria.
+3. [**Functional & Non-Functional Requirements**](./03_requirements.md): Specific system capabilities and quality targets.
 4. [**Project Context**](./04_context.md): Constraints, risks, and success metrics.
 
 ---
-*Note: This document is the source of truth for "What" we are building. All Technical Designs (RFD) must align with the requirements found in this folder.*
+*Maintenance Note: To change a requirement, update the specific sub-file via a Pull Request. During the review, set the 'Current State' above to **Proposed**. Before the PR be merged into main, flip the state to **Accepted**.*

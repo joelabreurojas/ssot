@@ -4,7 +4,6 @@
 <!-- 
     Describe the overarching purpose of this module. 
     What business capability are we providing? 
-    Example: "Implement a robust and secure User Management system."
 -->
 [Insert high-level module objective here]
 
@@ -54,8 +53,8 @@
     The coordination strategy for the team. 
     Identify the bottleneck (Critical Path) and the areas for parallel growth.
 -->
-*   **Critical Path (Linear):** Tasks **Order 1 -> 2 -> 3** form the essential technical foundation. 
-*   **Parallel Work:** The Task at **Order 2** with `Depends On: None` can be handled by a second developer simultaneously with Order 1 or 2.
+*   **Critical Path (Linear):** Tasks **Order [X] -> [Y] -> [Z]** form the essential foundation. 
+*   **Parallel Work:** Task **Order [A]** with `Depends On: None` can be handled by a second developer simultaneously.
 
 ---
-*Maintenance Note: This file serves as the offline backup and master roadmap for this module (milestone).
+*Maintenance Note: This file serves as the master roadmap for this specific module. When creating tickets in the issue tracker, use the specific Task files found in this directory.*

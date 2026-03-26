@@ -3,10 +3,10 @@
 ## 1. Architectural Pattern
 <!-- 
     What is the high-level software architecture pattern chosen for this project? 
-    (e.g., Standard MVC, Hexagonal / Ports & Adapters, Modular Monolith, Event-Driven).
+    (e.g., Standard MVC, Hexagonal / Ports & Adapters, Modular Monolith, Layered Architecture).
     Briefly explain WHY this pattern was chosen over others for this specific product.
 -->
-[Insert Pattern and Rationale]
+[Insert Pattern and Rationale Here]
 
 ---
 
@@ -18,8 +18,8 @@
 ```text
 project_root/
 ├── [folder_1]/      # [Brief description of what goes here]
-├──[folder_2]/      # [Brief description of what goes here]
-└── [folder_3]/      #[Brief description of what goes here]
+├── [folder_2]/      # [Brief description of what goes here]
+└── [folder_3]/      # [Brief description of what goes here]
 ```
 
 ---
@@ -30,7 +30,7 @@ project_root/
     (e.g., controllers, services, models) or by business domain (e.g., auth, billing, inventory)?
     
     CRITICAL: What are the strict dependency rules? (e.g., "The Domain layer must never 
-    import from the HTTP layer" or "Modules can only communicate via the Event Bus").
+    import from the Infrastructure layer" or "Modules can only communicate via Interfaces").
 -->
 
 ### Module/Layer A: [Name]
@@ -38,8 +38,8 @@ project_root/
 *   **Allowed Imports:** [What other modules is this module allowed to know about?]
 
 ### Module/Layer B: [Name]
-*   **Responsibility:** [What is the sole purpose of this area of the code?]
-*   **Allowed Imports:** [What other modules is this module allowed to know about?]
+*   **Responsibility:** [Description]
+*   **Allowed Imports:** [Description]
 
 ---
 
@@ -51,9 +51,9 @@ project_root/
 
 | Dependency | Purpose / Role | Rationale |
 | :--- | :--- | :--- |
-| **[e.g., React / FastAPI / Spring]** | Core application framework |[Why this over alternatives?] |
-| **[e.g., ORM / Query Builder]** | Database interaction layer | [Why this specific tool?] |
-| **[e.g., State Management Lib]** | Managing application state | [Required for feature X] |
+| **[Framework Name]** | Core application framework | [Why this over alternatives?] |
+| **[Tool Name]** | [e.g., Data Access Layer / ORM] | [Why this specific tool?] |
+| **[Library Name]** | [e.g., State Management / Validation] | [Required for feature X] |
 
 ---
 
@@ -65,7 +65,6 @@ project_root/
 
 | Integration / Service | Purpose | Integration Method | Potential Risks / Rate Limits |
 | :--- | :--- | :--- | :--- |
-| **[e.g., Stripe]** | Payment Processing | Official SDK | Webhook handling required; rate limits on API calls. |
-| **[e.g., Auth0 / Firebase]** | Identity Provider | OAuth2 / OIDC | Vendor lock-in risk; ensure fallback strategy. |
-| **[e.g., SendGrid / AWS SES]** | Transactional Emails | REST API | Delivery rate limits; requires domain verification. |
-
+| **[External Service A]** | [e.g., Payment Processing] | [e.g., Official SDK / REST API] | [e.g., Webhook handling required; API limits] |
+| **[External Service B]** | [e.g., Identity Provider] | [e.g., OAuth2 / OIDC] | [e.g., Vendor lock-in risk; uptime dependency] |
+| **[External Service C]** | [e.g., Transactional Emails] | [e.g., SMTP / API] | [e.g., Delivery rate limits; domain verification] |

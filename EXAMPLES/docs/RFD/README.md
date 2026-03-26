@@ -1,4 +1,4 @@
-# Request for Design: [Project Name]
+# Request for Design (RFD): [Module Name]
 
 ## 1. Project Status
 *   **Current State:** [Proposed | Accepted]
@@ -8,41 +8,41 @@
 
 ## 2. High-Level Architecture
 <!-- 
-    Visualize the system components and how they interact. 
-    Use Mermaid TD (Top Down) or LR (Left to Right) graphs.
+    Visualize the system components and their interactions. 
+    Standard: Use Mermaid TD (Top Down) or LR (Left to Right).
 -->
 
 ```mermaid
 graph TD
-    User((User)) --> Web[Web Interface]
-    Web --> API[Backend API]
-    API --> DB[(Database)]
-    API --> Ext[External Services]
+    User((User)) --> Interface[Interface Layer]
+    Interface --> Logic[Business Logic]
+    Logic --> Data[(Data Layer)]
+    Logic --> Ext[External Services]
 ```
 
 ---
 
 ## 3. Technical Strategy
 <!-- 
-    Summary of the chosen technology stack and the rationale 
-    behind these choices. 
+    A brief summary of the chosen technology stack and the 
+    fundamental reasoning behind the architecture. 
 -->
-*   **Language/Runtime:** [e.g., Python 3.13, Node.js 22]
-*   **Frameworks:** [e.g., FastAPI, React]
-*   **Databases:** [e.g., PostgreSQL, Redis]
+*   **Core Stack:** [e.g., Python / Node.js / Go]
+*   **Key Patterns:** [e.g., Hexagonal Architecture, Event-Driven, MVC]
+*   **Strategy Summary:** [Why this approach was chosen for this module].
 
 ---
 
 ## 4. Modular Index
 <!-- 
-    The RFD is split into focused files to enable targeted 
-    architectural reviews via Pull Requests. 
+    The RFD is split into focused files to ensure technical reviews 
+    remain deep and productive. 
 -->
-1. [**Structure & Dependencies**](./01_structure.md): Directory tree and external libraries.
-2. [**Data Model**](./02_data_model.md): Database schema and entity relationships.
-3. [**Interface Design**](./03_interface.md): API endpoints and web routes.
-4. [**Logic & Services**](./04_logic.md): Business logic and method signatures.
-5. [**Ops & Deployment**](./05_ops.md): Testing, deployment, and monitoring.
+1. [**Structure & Dependencies**](./01_structure.md): Layout and external libraries.
+2. [**Data Model**](./02_data_model.md): Storage, schemas, and integrity.
+3. [**Interface Design**](./03_interface.md): Communication contracts (API/Web).
+4. [**Logic & Services**](./04_logic.md): Business rules and service signatures.
+5. [**Ops & Security**](./05_ops_and_security.md): Testing, deployment, and secrets.
 
 ---
-*Note: This document is the source of truth for "How" we are building. All specifications in this folder must align with the approved Product Requirements Document (PRD).*
+*Maintenance Note: Any change to a sub-file requires the 'Current State' here to be set to 'Proposed' in the PR, and flipped to 'Accepted' upon merge.*

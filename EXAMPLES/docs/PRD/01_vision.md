@@ -2,35 +2,36 @@
 
 ## 1. Product Vision
 <!-- 
-    What is the long-term "North Star" for this project? 
-    What does the world look like after this is successful?
+    What is the long-term goal of this project? 
+    Describe the "ideal future" this product creates once successful.
 -->
-[Insert Vision Statement]
+[Insert Vision Statement Here]
 
 ---
 
 ## 2. Target Audience (User Personas)
 <!-- 
-    Describe the specific types of people who will use this system.
-    Identify their needs and their "pains."
+    Identify the specific types of people who will interact with the system.
+    Focus on their motivations and frustrations.
 -->
 
-### Persona A: [Name/Title]
-*   **Who they are:** [e.g., A university student overwhelmed by technical reading]
-*   **Goals:** [What do they want to achieve with this product?]
-*   **Pains:** [What frustrates them about the current status quo?]
+### Persona: [Name/Role]
+*   **Who they are:** [e.g., An end-user looking for a faster way to book flights]
+*   **Primary Goals:** [What do they want to achieve with this product?]
+*   **Current Pains:** [What frustrates them today that this product will solve?]
 
-### Persona B: [Name/Title]
-*   **Who they are:** [e.g., A professor with limited time for individual support]
-*   **Goals:** [e.g., To automate repetitive Q&A]
-*   **Pains:** [e.g., High administrative workload]
+### Persona: [Name/Role]
+*   **Who they are:** [e.g., An admin managing internal data]
+*   **Primary Goals:** [Description]
+*   **Current Pains:** [Description]
 
 ---
 
 ## 3. Guiding Principles
 <!-- 
-    What are the unique values of this specific product?
-    Example: "Privacy First," "Offline-Capable," "Minimalist UI."
+    What are the unique values of this specific product? 
+    Examples: "Privacy over features", "Speed above all", "Offline availability".
 -->
-*   **[Principle 1]:** [Description]
-*   **[Principle 2]:** [Description]
+*   **[Principle 1]:** [Brief description of why this value matters]
+*   **[Principle 2]:** [Brief description]
+*   **[Principle 3]:** [Brief description]

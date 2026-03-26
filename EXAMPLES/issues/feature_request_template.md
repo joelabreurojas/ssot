@@ -1,28 +1,28 @@
 ---
 name: "🚀 Feature / Task"
-about: "Propose a new feature, user-facing functionality, or planned task."
+about: "Propose new functionality or implement a planned Milestone task."
 title: ""
 labels: ["type:feature"]
 assignees: ''
 ---
 
-**Execution Order:**[Number or N/A]  
+**Execution Order:** [Number or N/A]  
 **Depends On:** [Order # or N/A]  
 **Milestone:** [Module Name]  
 
 ---
 
 ### 🎯 Goal
-<!-- A one-sentence description of WHY this feature is important and what value it adds for the user. -->
+<!-- A one-sentence description of WHY this is important and what value it adds. -->
 
 
 ### 📝 To-Do List
-<!-- A checklist of the specific, atomic technical steps required to complete this task. -->
+<!-- Technical steps required. Each item should result in one or more Atomic Commits. -->
 - [ ] 
 - [ ] 
 - [ ] 
 
 ### ✅ Acceptance Criteria
-<!-- A clear, testable "Definition of Done." How will we know, objectively, that this is working correctly? -->
+<!-- What must be true for this task to be merged? -->
 - [ ] 
 - [ ]

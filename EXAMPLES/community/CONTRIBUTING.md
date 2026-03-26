@@ -2,41 +2,49 @@
 
 First off, thank you for taking the time to contribute! 🎉 
 
-This project follows a strict **Design-First** philosophy and high engineering standards to ensure the codebase remains maintainable and robust.
+This project follows a strict **Design-First** philosophy and a **Blameless Engineering Culture**. We prioritize system improvements and collective learning over individual blame.
 
 ---
 
 ## 🧭 The Golden Rule
-Before you write a single line of code, you must familiarize yourself with our [**Project Workflow Manual**](../../WORKFLOW/README.md). It is the single source of truth for how we plan, code, and deliver.
+Before you write a single line of code, you must familiarize yourself with our [**Project Workflow Manual**](../../WORKFLOW/README.md). It is the single source of truth for how we plan, design, code, and deliver.
 
 ---
 
 ## 🚀 How to Get Started
 
-### 1. Identify the Work
+### 1. Understand the Vision
+Review the [**PRD**](../../docs/PRD/README.md) and the [**Roadmap**](../../docs/ROADMAP.md) to understand what we are building and what is currently prioritized as **NOW**. Do not work on features that are in the 'Later' column without prior discussion.
+
+### 2. Identify the Work
 *   Browse the [**Kanban Board**](link-to-board).
 *   Look for issues in the **`✅ Ready`** column. 
-*   **Pick the lowest Execution Order:** To maintain project momentum, always pick the lowest available number that is not currently assigned.
+*   **Pick by Order:** To maintain momentum, always pick the task with the lowest **Execution Order** that is not currently assigned.
+*   **Check Dependencies:** Verify that any tasks listed in the `Depends On` field are already completed or coordinated.
 
-### 2. Set Up Your Environment
-*   Clone the repository.
+### 3. Set Up Your Environment
 *   Follow the installation steps in the main [**README.md**](../../README.md).
-*   **Optional Step:** Configure your local Git commit template:
+*   Configure your local Git commit template:
     `git config --local commit.template EXAMPLES/commits/git_commit_template.txt`
 
 ---
 
-## 🛠️ Development Process
+## 🛠️ The Development Cycle
 
 We build atomically. Every contribution must follow this lifecycle:
 
-1.  **Branch:** Create a branch from `main`.
-    *   *Convention:* `[type]/[issue-id]-[short-description]`
-2.  **Code & Document:**
-    *   Write **Atomic Commits** following the [Conventional Commits spec](../../WORKFLOW/12_commit_standards.md).
-    *   **Logic over Code:** If your change affects logic or architecture, you **must** update the corresponding [PRD](../../WORKFLOW/03_prd_standards.md) or [RFD](../../WORKFLOW/04_rfd_standards.md) files.
-3.  **Test:** Ensure all Continuous Integration (CI) checks pass locally (`linter`, `tests`, `typing`).
-4.  **Submit:** Open a Pull Request using our [Standard PR Template](../pull_requests/standard_pr.md).
+1.  **Design First:** If your task requires a technical pivot or a new architectural choice not covered in the RFD, you must first propose an [**ADR**](../../docs/ADR/000_template.md).
+2.  **Branch:** Create a branch from `main`: `[type]/[id]-[short-description]`.
+3.  **Code & Document:**
+    *   Write **Atomic Commits** following our [Commit Standards](../../WORKFLOW/13_commit_standards.md).
+    *   **Logic over Code:** If you change system behavior, you **must** update the corresponding [PRD](../../docs/PRD/README.md) or [RFD](../../docs/RFD/README.md) files within the same Pull Request.
+4.  **Verify:** Ensure CI checks pass locally (`linter`, `tests`, `typing`).
+5.  **Submit:** Open a Pull Request using our [Standard Template](../pull_requests/standard_pr.md).
+
+---
+
+## 🤝 Blameless Culture
+If you introduce a bug or break the build, don't worry. We focus on **mitigation, not finger-pointing.** We work together to identify how our documentation or automated checks failed to catch the error, and we improve the system to prevent it from happening again.
 
 ---
 
@@ -44,7 +52,7 @@ We build atomically. Every contribution must follow this lifecycle:
 
 To have a Pull Request merged, it must meet these criteria:
 *   **Atomic Logic:** The PR solves exactly one Issue.
-*   **Documentation:** All technical pivots are recorded in an [ADR](../../WORKFLOW/13_adr_standards.md).
+*   **Documentation:** All technical pivots are recorded in an [ADR](../../WORKFLOW/14_adr_standards.md).
 *   **Green CI:** The pipeline must be 100% green (✅).
 *   **Peer Approval:** At least one Maintainer must approve the architectural approach.
 

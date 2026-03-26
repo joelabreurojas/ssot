@@ -5,20 +5,28 @@
     List the technical capabilities the system MUST have. 
     Focus on input, processing, and output.
 -->
+
 | ID | Requirement | Description |
 | :--- | :--- | :--- |
-| FR-01 | [e.g., File Upload] | The system must allow users to upload PDF documents up to 20MB. |
-| FR-02 | [e.g., Data Parsing] | The system must extract text content from uploaded documents. |
+| **FR-01** | [e.g., Data Ingestion] | The system must allow the ingestion of [Type] data via [Method]. |
+| **FR-02** | [e.g., Export Engine] | Users must be able to export reports in [Format] format. |
+| **FR-03** | [Requirement Name] | [Detailed description of the required behavior]. |
 
 ---
 
 ## 2. Non-Functional Requirements (NFR)
 <!-- 
-    List the quality attributes of the system. 
+    List the quality attributes and constraints of the system. 
+    These define how the system performs under load, how it is secured, and its reliability.
 -->
-| Category | Requirement | Target Metric |
+
+| Category | Requirement | Target Metric / Standard |
 | :--- | :--- | :--- |
-| **Performance** | Response Time | Queries must return an answer in less than 15 seconds. |
-| **Security** | Data Encryption | All user documents must be encrypted at rest. |
-| **Reliability** | Uptime | The system should have 99.5% availability. |
-| **Scalability** | Concurrent Users | The system must support 100 concurrent chat sessions. |
+| **Performance** | [e.g., Latency] | [e.g., Response time must be under 200ms for 95% of requests]. |
+| **Security** | [e.g., Encryption] | [e.g., All data must be encrypted at rest using AES-256]. |
+| **Reliability** | [e.g., Uptime] | [e.g., The system must maintain 99.9% availability (High Availability)]. |
+| **Scalability** | [e.g., Concurrency] | [e.g., The system must support 1,000 concurrent active users]. |
+| **Usability** | [e.g., Accessibility] | [e.g., The UI must comply with WCAG 2.1 Level AA standards]. |
+
+---
+*Note: These requirements provide the quantitative targets for the Testing Strategy defined in the RFD.*

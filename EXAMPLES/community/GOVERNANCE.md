@@ -1,45 +1,46 @@
 # Project Governance
 
-> _Transparency in leadership and decision-making._
+> _Transparency in leadership and strategic decision-making._
 
-This document outlines the roles, responsibilities, and decision-making processes for [Project Name]. Our goal is to ensure the project remains stable, secure, and aligned with its core mission while fostering a collaborative environment.
+This document outlines the roles, responsibilities, and decision-making processes for [Project Name]. Our goal is to ensure the project remains stable, secure, and aligned with its core mission while fostering a collaborative, blameless environment.
 
 ---
 
 ## 1. Roles & Responsibilities
 
 ### 👑 Project Owner (PO)
-The Project Owner is the ultimate authority on the project's direction.
-*   **Responsibilities:** Defining the long-term product vision, managing core infrastructure, and resolving ultimate stalemates in technical or product discussions.
-*   **Authority:** Final say on the [**PRD**](../../WORKFLOW/04_prd_standards.md) and high-level architectural pivots.
+The Project Owner is the ultimate authority on the project's strategic direction.
+*   **Strategic Authority:** Owns the [**PRD**](../../WORKFLOW/04_prd_standards.md) and the [**Roadmap**](../../WORKFLOW/05_roadmap_standards.md).
+*   **The Gatekeeper:** Approves when a Milestone moves from 'NEXT' to 'NOW' on the Roadmap (officially locking requirements and triggering technical design).
+*   **Conflict Resolution:** Acts as the final decision-maker in the event of a stalemate in technical or product discussions.
 
 ### 🛡️ Maintainers
-Maintainers are trusted contributors who have demonstrated a deep understanding of the project's standards and architecture.
-*   **Responsibilities:** Reviewing and approving Pull Requests, managing the [**Kanban Board**](../../WORKFLOW/10_the_kanban_process.md), and ensuring code adheres to the [**Workflow Manual**](../../WORKFLOW/README.md).
-*   **Authority:** Authorized to merge code into the `main` branch once CI passes and peer review is complete.
+Maintainers are trusted contributors responsible for the day-to-day health of the codebase.
+*   **Quality Control:** Authorized to review and merge Pull Requests into the `main` branch.
+*   **Orchestration:** Responsible for managing the [**Kanban Board**](../../WORKFLOW/11_the_kanban_process.md) and ensuring Issues are correctly labeled and ordered.
+*   **Mentorship:** Guides Contributors through the [**Design-First lifecycle**](../../WORKFLOW/02_lifecycle.md).
 
 ### 🧑‍💻 Contributors
-Anyone who submits code, documentation, bug reports, or research spikes.
-*   **Responsibilities:** Adhering to the [**Code of Conduct**](./CODE_OF_CONDUCT.md) and following the [**Branch and Commit standards**](../../WORKFLOW/11_branch_flow.md).
-*   **Advancement:** Contributors who consistently provide high-quality reviews and code may be invited by the Project Owner to become Maintainers.
+Anyone who improves the project through code, documentation, or feedback.
+*   **Responsibilities:** Following the [**Commit Standards**](../../WORKFLOW/13_commit_standards.md) and participating in the peer-review process.
+*   **Advancement:** Contributors who consistently deliver high-quality work and demonstrate a "system-first" mindset may be invited to become Maintainers.
 
 ---
 
 ## 2. Decision-Making Process
 
-We prioritize **Technical Consensus** but value **Momentum**.
+We prioritize **Technical Consensus** but value **Execution Momentum**.
 
-1.  **Standard Tasks:** Decisions are made through the Pull Request review process. Approval from one Maintainer is typically sufficient for standard issues.
-2.  **Architectural Changes:** Significant changes must be proposed via a [**Request for Design (RFD)**](../../WORKFLOW/05_rfd_standards.md).
-3.  **Ongoing Refinements:** Technical pivots discovered during execution are documented via [**Architecture Decision Records (ADR)**](../../WORKFLOW/13_adr_standards.md).
-4.  **Conflict Resolution:** If the team cannot reach a consensus on a technical path, the Project Owner will make the final decision based on the rationales documented in the RFD or ADR.
+1.  **Product Decisions:** Changes to the "What" are proposed in the PRD folder and must be accepted by the Project Owner.
+2.  **Architectural Decisions:** Significant technical choices are proposed via a [**Request for Design (RFD)**](../../WORKFLOW/06_rfd_standards.md).
+3.  **Implementation Pivots:** Choices made during coding that deviate from the design are recorded in [**ADRs**](../../WORKFLOW/14_adr_standards.md).
+4.  **Stalemates:** If Maintainers cannot reach an agreement on a PR or RFD, the Project Owner will make the final determination based on the documented rationales and project principles.
 
 ---
 
 ## 3. Communication Channels
 *   **Official Discussions:** [Insert Link to GitHub Discussions / Slack / Discord]
-*   **Task Tracking:** [Insert Link to Project Board]
-*   **Security Vulnerabilities:** Please do not open public issues for security flaws. Email **[INSERT CONTACT EMAIL]** directly.
+*   **Security Vulnerabilities:** Do not open public issues for security flaws. Please email **[INSERT CONTACT EMAIL]** directly.
 
 ---
-*This governance model is designed to be lean and efficient, prioritizing the "Keep It Simple" philosophy while maintaining strict quality control.*
+*This governance model is designed to be lean, prioritizing the "Keep It Simple" philosophy while ensuring every change is intentional and documented.*

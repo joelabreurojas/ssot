@@ -9,8 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 <!-- 
-    Changes that have been merged into 'main' but not yet tagged 
-    in a formal release belong here. 
+    New changes that have been merged into 'main' but not yet 
+    included in a formal release/tag belong here. 
 -->
 
 ### Added
@@ -24,9 +24,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.0] - [YYYY-MM-DD]
 ### Added
 - Initial MVP release.
-- [Feature A]: Complete implementation of the core business logic.
-- [Feature B]: User interface for primary workflow.
-- Documentation: Full [Workflow Manual](./WORKFLOW/README.md) and Design specs.
+- [Core Feature A]: Complete implementation of the primary module.
+- Documentation: Full [Workflow Manual](../WORKFLOW/README.md) and Design specs.
 
 ### Changed
 - [Component Name]: Description of a significant refactor or improvement.
@@ -35,10 +34,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [Bug ID]: Resolution of critical path vulnerability found during testing.
 
 ### Security
-- Implemented CSRF protection across all state-changing endpoints.
 - Established strict Role-Based Access Control (RBAC).
+- Implemented CSRF protection.
 
 ---
+
 ## [0.1.0] - [YYYY-MM-DD]
 ### Added
 - Project initialization and infrastructure setup.
@@ -46,7 +46,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-## Guide to Categories
+## 🛠 Guide to Categories
 *   **Added:** For new features.
 *   **Changed:** For changes in existing functionality.
 *   **Deprecated:** For soon-to-be-removed features.

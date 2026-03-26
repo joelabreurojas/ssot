@@ -8,24 +8,30 @@
 ---
 
 ### 🎯 Goal
-<!-- A one-sentence description of what this specific task achieves and the value it adds. -->
+<!-- 
+    A one-sentence description of what this specific task achieves 
+    and the value it adds to the module. 
+-->
 [Insert Goal]
 
 ### 📝 To-Do List
 <!-- 
-    Checklist for the developer. 
-    Each item here should ideally be represented by one or more Atomic Commits. 
+    Checklist of specific technical requirements. 
+    Each item here should ideally result in one or more Atomic Commits. 
 -->
 - [ ] [Sub-task / Technical requirement 1]
 - [ ] [Sub-task / Technical requirement 2]
-- [ ][Sub-task / Technical requirement 3]
+- [ ] [Sub-task / Technical requirement 3]
 
 ### ✅ Acceptance Criteria
-<!-- What must objectively be true for this Task to be merged into main? -->
+<!-- 
+    What must objectively be true for this Task to be merged? 
+    This is the "Micro-DoD" for this specific unit of work.
+-->
 - [ ] [Requirement met]
-- [ ] [Tests passed and cover new logic]
-- [ ] [Documentation updated if necessary]
+- [ ] [Logic is covered by automated tests]
+- [ ] [Documentation (RFD/ADR) updated if necessary]
 
 ---
-**🌱 Branching Strategy Reminder:**  
+**🌱 Branching Strategy:**  
 `git checkout -b [type]/[issue-id]-[short-description]`

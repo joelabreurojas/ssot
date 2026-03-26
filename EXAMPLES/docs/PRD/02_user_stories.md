@@ -1,6 +1,6 @@
 # User Stories
 
-Each story follows the format: **As a [Persona], I want to [Action] so that [Value].**
+Each story follows the standard format: **As a [Persona], I want to [Action] so that [Value].**
 
 ---
 
@@ -9,9 +9,11 @@ Each story follows the format: **As a [Persona], I want to [Action] so that [Val
 *   **Status:** [Proposed / Approved]
 *   **Priority:** [High / Medium / Low]
 *   **Acceptance Criteria:**
-    1. [ ] [Specific, testable condition 1]
-    2. [ ] [Specific, testable condition 2]
-*   **Visual Reference:** [Link to VIEW or Sketch](../../views/README.md)
+    <!-- Specific, testable conditions that must be met for this story to be complete. -->
+    1. [ ] [Criteria 1]
+    2. [ ] [Criteria 2]
+    3. [ ] [Criteria 3]
+*   **Visual Reference:** [Link to VIEW or Sketch](../../VIEWS/README.md)
 
 ---
 
@@ -20,6 +22,19 @@ Each story follows the format: **As a [Persona], I want to [Action] so that [Val
 *   **Status:** [Proposed / Approved]
 *   **Priority:** [High / Medium / Low]
 *   **Acceptance Criteria:**
-    1. [ ] [Specific, testable condition 1]
-*   **Visual Reference:** [Link to VIEW or Sketch](../../views/README.md)
+    1. [ ] [Criteria 1]
+    2. [ ] [Criteria 2]
+*   **Visual Reference:** [Link to VIEW or Sketch](../../VIEWS/README.md)
 
+---
+
+### US-03: [Short Feature Name]
+*   **User Story:** As a [Persona], I want to [do something] so that [benefit].
+*   **Status:** [Proposed / Approved]
+*   **Priority:** [High / Medium / Low]
+*   **Acceptance Criteria:**
+    1. [ ] [Criteria 1]
+*   **Visual Reference:** [Link to VIEW or Sketch](../../VIEWS/README.md)
+
+---
+*Note: Once these stories are Approved, they will be used into Modules to be sequenced in the Roadmap before technical design (RFD) begins.*

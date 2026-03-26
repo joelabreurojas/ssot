@@ -1,42 +1,46 @@
-# UI/UX Views: [Project Name]
+# UI/UX Views Gallery: [Project Name]
 
-> _Visualizing the user journey from structure to aesthetics._
-
-This directory contains the visual specifications for the project. We follow a **Structure-First** approach, ensuring Information Architecture is solid before finalizing visual details.
+## 1. Project Status
+*   **Current State:** [Proposed | Accepted]
+*   **Last Updated:** [YYYY-MM-DD]
 
 ---
 
-### 🛠️ Design Tooling
+## 2. Visual Strategy & Language
+<!-- 
+    Briefly describe the intended "feel" (e.g., Minimalist, Professional).
+-->
+[Insert visual strategy summary]
+
+---
+
+## 3. Design Tooling
 *   **Master Design File:** [Link to Figma / Penpot / Other]
-*   **Design System / UI Kit:** [Link to reference, if any]
+*   **Design System / UI Kit:** [Link to reference]
 
 ---
 
-### 🎨 Visual Language
+## 4. View Index (Logic & Visuals)
 <!-- 
-    Briefly describe the intended "feel" of the UI.
-    Example: Minimalist, Professional, High-Contrast, etc.
--->
-[Insert design philosophy here]
-
----
-
-### 📂 View Index (Linked to User Stories)
-<!-- 
-    List the views stored in this folder. 
-    Ensure they follow the naming convention: [UserStoryID]_[ScreenName]_[Device].
+    List all screens here. 
+    - Specification: Link to the .md file (Information Architecture & Logic).
+    - Visual Source: Link to the .png, .jpg, or external design frame.
 -->
 
-| Source | Description | Supported User Story |
-| :--- | :--- | :--- |
-| `01_dashboard_desktop.png` | Main user landing view | [US-01](../prd/02_user_stories.md) |
-| `02_login_mobile.png` | Authentication screen | [US-02](../prd/02_user_stories.md) |
+| Specification | Visual Source | Description | Target User Story |
+| :--- | :--- | :--- | :--- |
+| [`00_template.md`](./00_template.md) | N/A | Master blueprint | N/A |
+| [`US01_dashboard.md`](./US01_dashboard.md) | [View Asset](./US01_dashboard.png) | Main landing view | [US-01](../PRD/02_user_stories.md) |
+| [`US02_login_form.md`](./US02_login_form.md) | [View Asset](./US02_login_form.png) | Auth interface | [US-02](../PRD/02_user_stories.md) |
 
 ---
 
-### 🚦 State Checklist
-Every view submission must consider the following states to be considered "Done":
+## 🚦 State Checklist
+Every view submission must account for:
 - [ ] **Empty State:** No data available.
 - [ ] **Loading State:** Data is being fetched.
-- [ ] **Error State:** Validation failures or system crashes.
-- [ ] **Success State:** Feedback for completed actions.
+- [ ] **Error State:** Failures or validation issues.
+- [ ] **Success State:** Confirmation of actions.
+
+---
+*Maintenance Note: Any change to a specification or a visual asset requires the 'Current State' here to be set to **Proposed** in the PR, and flipped to **Accepted** upon merge.*
