@@ -27,7 +27,7 @@
 
 ### How to Test / Reproduce
 <!-- Provide clear, step-by-step instructions for a reviewer to manually verify the changes. This is non-negotiable. -->
-1. `git checkout[branch_name]`
+1. `git checkout [branch_name]`
 2. `[setup command, e.g., docker compose up]`
 3. [Testing step...]
 4. **Expected Outcome:** [Describe what the reviewer should see/experience]
@@ -40,7 +40,7 @@
 ---
 
 ### Checklist (for Author)
--[ ] Code follows project coding standards.
+- [ ] Code follows project coding standards.
 - [ ] All automated CI checks pass locally.
 - [ ] New/modified code has appropriate test coverage.
 - [ ] Documentation has been updated if necessary.

@@ -2,9 +2,9 @@
 # COMMIT MESSAGE GUIDE (Conventional Commits)
 # ---------------------------------------------------------
 # Line 1: <type>(<scope>): <subject>
-#   - <type>: feat, fix, docs, style, refactor, test, chore, perf
+#   - <type>: feat, fix, chore, refactor, test, docs, research, perf, style
 #     (Add '!' after type for breaking changes: feat!(api): ...)
-#   - <scope>: The logical domain (e.g., auth, db, ui). Optional.
+#   - <scope>: A free-form topic (e.g., sidebar, auth, db-schema).
 #   - <subject>: Imperative mood ("add" not "added"). Max 50 chars.
 #
 # Line 2: MUST BE BLANK
