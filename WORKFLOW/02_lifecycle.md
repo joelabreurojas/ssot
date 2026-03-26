@@ -1,32 +1,68 @@
 # Project Lifecycle
 
-The development cycle is a structured, phased approach that moves from abstract ideas to concrete implementation. To maintain high quality and prevent re-work, **Phase 1 must be completed and approved before Phase 2 begins.**
+The development cycle is a structured approach that moves from abstract product vision to concrete technical delivery. To maximize efficiency and prevent wasted effort, we follow the **Just-In-Time (JIT) Design** loop.
 
 ---
 
-### Phase 1: Inception & Design
-Before writing code, we define the boundaries of the problem and the architecture of the solution. This phase results in a modular documentation set that acts as the blueprint for the entire project.
+## 🌀 The Development Cycle Diagram
 
-*   **PRD (Product Requirements Document):** Defines the "What" and "Why." Focuses on user stories and business logic.
-*   **RFD (Request for Design):** Defines the "How." Focuses on the technical specification, data models, and API contracts.
-*   **VIEWS:** Visualizes the user experience through sketches or wireframes to align the interface with the requirements.
+```mermaid
+graph TD
+  subgraph P1 [Phase 1: Inception & Strategic Design]
+    PRD[PRD: The What] --> RM[Roadmap: The When]
+    RM --> JIT{Is it 'NOW'?}
+    JIT -- Yes --> RFD[RFD & VIEWS: The How]
+    JIT -- No --> RM
+  end
+
+  subgraph P2 [Phase 2: Planning & Orchestration]
+    RFD --> MS[Milestone: Module Epic]
+    MS --> IS[Issues: Ordered Tasks]
+  end
+
+  subgraph P3 [Phase 3: Execution & Tracking]
+    IS --> Code[Coding & Atomic Commits]
+    Code -- Technical Pivot? --> ADR[ADR: Decision Record]
+    ADR --> Code
+  end
+
+  subgraph P4 [Phase 4: Review & Delivery]
+    Code --> PR[Pull Request & CI]
+    PR -- Changes Requested --> Code
+    PR -- Approved --> Merge[Squash & Merge]
+    Merge --> Rel[Release & Changelog]
+    Rel --> RM
+  end
+```
+
+---
+
+## 📑 Phase Descriptions
+
+### Phase 1: Inception & Strategic Design
+Before writing implementation code, we establish the requirements and the sequence of delivery.
+1.  **PRD (The What):** Define the problem, user stories, and business goals in `docs/PRD/`.
+2.  **ROADMAP (The When):** Sequence features into **Now, Next, and Later**. 
+3.  **RFD & VIEWS (The How):** **Crucial Rule:** Technical design and UI wireframing are performed **ONLY** for modules currently in the **"Now"** column of the Roadmap. 
 
 ### Phase 2: Planning & Orchestration
-Once the technical "How" is defined, we break the work into manageable, trackable pieces.
-
-*   **Milestones (Epics):** We identify the high-level **Modules** from the RFD. Each Milestone represents a vertical slice of functional value.
-*   **Issues (Tasks):** We populate Milestones with discrete tasks. Each task is assigned a numeric **Execution Order** and clear **Dependencies** to create an optimized development roadmap.
+Once the technical "How" for the current module is approved:
+1.  **Milestones:** Initialize the module-centric Epic in the project planning folder.
+2.  **Issues:** Populate the Milestone with discrete Tasks, assigning each a numeric **Execution Order** and clear **Dependencies**.
 
 ### Phase 3: Execution & Tracking
-The actual development phase where the system is built according to the standards established in the previous phases.
-
-*   **Coding:** Developers follow the [Branch Flow](./11_branch_flow.md), working on one Issue at a time.
-*   **Atomic Progress:** Work is saved through [Atomic Commits](./12_commit_standards.md) that mirror the Task's To-Do list.
-*   **Refinement (ADRs):** When significant technical pivots occur during coding that deviate from the RFD, they are recorded as [Architecture Decision Records](./13_adr_standards.md).
+1.  **Coding:** Developers follow the [Branch Flow](./12_branch_flow.md).
+2.  **Atomic Progress:** Work is saved through [Atomic Commits](./13_commit_standards.md).
+3.  **Decision Logging:** Mid-flight technical pivots are recorded as [ADRs](./14_adr_standards.md).
 
 ### Phase 4: Review & Delivery
-The final gate before code reaches the production environment.
+1.  **Pull Request:** peer review and CI verification.
+2.  **Merge:** Squash to main.
+3.  **The Loop:** Once a Milestone meets its **Definition of Done**, the next priority from the "Next" column of the **Roadmap** is moved to **"Now,"** and its RFD phase begins.
 
-*   **Pull Request:** The developer tells the story of the solution and provides testing instructions.
-*   **Peer Review:** A human reviewer verifies logic and architecture, while the CI pipeline verifies style and stability.
-*   **Merge:** Successful tasks are "Squashed and Merged" into `main`, and the cycle begins again for the next task in the Execution Order.
+---
+
+### 🚦 The Approval Gate
+Documents in Phase 1 (PRD, RFD, ADR) follow a strict status lifecycle:
+*   **Proposed:** The document is on a feature branch and under review in a PR.
+*   **Accepted:** The PR is approved and merged into `main`. Implementation can only begin on "Accepted" specifications.
