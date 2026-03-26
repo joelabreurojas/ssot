@@ -13,7 +13,7 @@ Each story follows the standard format: **As a [Persona], I want to [Action] so 
     1. [ ] [Criteria 1]
     2. [ ] [Criteria 2]
     3. [ ] [Criteria 3]
-*   **Visual Reference:** [Link to VIEW or Sketch](../../VIEWS/README.md)
+*   **Visual Reference:** [Link to VIEW or Sketch](../../VIEWS/00_template.md)
 
 ---
 
@@ -24,7 +24,7 @@ Each story follows the standard format: **As a [Persona], I want to [Action] so 
 *   **Acceptance Criteria:**
     1. [ ] [Criteria 1]
     2. [ ] [Criteria 2]
-*   **Visual Reference:** [Link to VIEW or Sketch](../../VIEWS/README.md)
+*   **Visual Reference:** [Link to VIEW or Sketch](../../VIEWS/00_template.md)
 
 ---
 
@@ -34,7 +34,7 @@ Each story follows the standard format: **As a [Persona], I want to [Action] so 
 *   **Priority:** [High / Medium / Low]
 *   **Acceptance Criteria:**
     1. [ ] [Criteria 1]
-*   **Visual Reference:** [Link to VIEW or Sketch](../../VIEWS/README.md)
+*   **Visual Reference:** [Link to VIEW or Sketch](../../VIEWS/00_template.md)
 
 ---
 *Note: Once these stories are Approved, they will be used into Modules to be sequenced in the Roadmap before technical design (RFD) begins.*

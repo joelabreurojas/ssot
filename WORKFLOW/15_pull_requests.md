@@ -44,5 +44,5 @@ Once approved and CI passes, the PR is merged using the **Squash and Merge** str
 ### 3. Stacked PRs
 In cases where a task has a **Hard Dependency** on another unfinished task:
 1.  Branch off the prerequisite task's branch.
-2.  Use the `stacked_pr.md` template for your Pull Request.
+2.  Use the `stacked_pr_template.md` template for your Pull Request.
 3.  Clearly indicate which PR must be merged first. This allows reviewers to see only the relevant "diff" for your specific task and prevents large, unreviewable PRs.

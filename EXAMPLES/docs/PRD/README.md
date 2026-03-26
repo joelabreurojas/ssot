@@ -29,4 +29,4 @@
 4. [**Project Context**](./04_context.md): Constraints, risks, and success metrics.
 
 ---
-*Maintenance Note: To change a requirement, update the specific sub-file via a Pull Request. During the review, set the 'Current State' above to **Proposed**. Before the PR be merged into main, flip the state to **Accepted**.*
+*Maintenance Note: To change a requirement, update the specific sub-file via a Pull Request. During the review, set the 'Current State' above to **Proposed**. Before the PR is merged into main, flip the state to **Accepted**.*
