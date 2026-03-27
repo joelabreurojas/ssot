@@ -26,7 +26,7 @@ Every Milestone acts as a parent container for a group of related **Issues (Task
 
 A Milestone is considered complete only when it meets the following criteria:
 
-*   **Functional Outcome:** The tangible, real-world state described in the [**Milestone Blueprint**](../../EXAMPLES/milestones/milestone_blueprint.md) is achieved (e.g., "Users can successfully log in").
+*   **Functional Outcome:** The tangible, real-world state described in the [**Milestone Blueprint**](../EXAMPLES/milestones/milestone_blueprint.md) is achieved (e.g., "Users can successfully log in").
 *   **Vertical Slice Checklist:** Every layer of the architecture (Data to UI) is operational and verified.
 *   **Technical Integrity:** All child Issues are closed, 100% of the new logic is covered by tests, and all technical pivots are recorded in ADRs.
 

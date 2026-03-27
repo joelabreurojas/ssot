@@ -14,10 +14,10 @@ Before you write a single line of code, you must familiarize yourself with our [
 ## 🚀 How to Get Started
 
 ### 1. Understand the Vision
-Review the [**PRD**](../../docs/PRD/README.md) and the [**Roadmap**](../../docs/ROADMAP.md) to understand what we are building and what is currently prioritized as **NOW**. Do not work on features that are in the 'Later' column without prior discussion.
+Review the **[PRD]** and the **[Roadmap]** to understand what we are building and what is currently prioritized as **NOW**. Do not work on features that are in the 'Later' column without prior discussion.
 
 ### 2. Identify the Work
-*   Browse the [**Kanban Board**](link-to-board).
+*   Browse the **[Kanban Board]**.
 *   Look for issues in the **`✅ Ready`** column. 
 *   **Pick by Order:** To maintain momentum, always pick the task with the lowest **Execution Order** that is not currently assigned.
 *   **Check Dependencies:** Verify that any tasks listed in the `Depends On` field are already completed or coordinated.
@@ -33,13 +33,13 @@ Review the [**PRD**](../../docs/PRD/README.md) and the [**Roadmap**](../../docs/
 
 We build atomically. Every contribution must follow this lifecycle:
 
-1.  **Design First:** If your task requires a technical pivot or a new architectural choice not covered in the RFD, you must first propose an [**ADR**](../../docs/ADR/000_template.md).
+1.  **Design First:** If your task requires a technical pivot or a new architectural choice not covered in the **[RFD]**, you must first propose an [**ADR**](../../docs/ADR/000_template.md).
 2.  **Branch:** Create a branch from `main`: `[type]/[id]-[short-description]`.
 3.  **Code & Document:**
     *   Write **Atomic Commits** following our [Commit Standards](../../WORKFLOW/13_commit_standards.md).
-    *   **Logic over Code:** If you change system behavior, you **must** update the corresponding [PRD](../../docs/PRD/README.md) or [RFD](../../docs/RFD/README.md) files within the same Pull Request.
+    *   **Logic over Code:** If you change system behavior, you **must** update the corresponding **[PRD]** or **[RFD]** files within the same Pull Request.
 4.  **Verify:** Ensure CI checks pass locally (`linter`, `tests`, `typing`).
-5.  **Submit:** Open a Pull Request using our [Standard Template](../pull_requests/standard_pr.md).
+5.  **Submit:** Open a Pull Request using our [Standard Template](../pull_requests/standard_pr_template.md).
 
 ---
 
@@ -59,6 +59,6 @@ To have a Pull Request merged, it must meet these criteria:
 ---
 
 ## 💬 Communication
-If you are unsure about an approach, please open a **Research/Spike** issue or start a discussion in the [Discussions/Slack/Discord] channel before beginning implementation.
+If you are unsure about an approach, please open a **Research/Spike** issue or start a discussion in the **[Discussions/Slack/Discord]** channel before beginning implementation.
 
 **Happy Coding!**

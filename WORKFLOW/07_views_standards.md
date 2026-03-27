@@ -34,16 +34,6 @@ This directory serves as a gallery for sketches, wireframes, or mockups.
 
 ---
 
-### 🤖 AI-Assisted Workflow
-
-When using AI to generate views, follow this sequence:
-1.  **Input PRD:** Provide the AI with the PRD requirements (`02_user_stories.md`).
-2.  **Structural Output:** Ask the AI for a **Mermaid-based wireframe** or a Markdown list of UI components. Review this for logic and IA.
-3.  **Visual Output:** Use the approved structure to generate the visual mockup in a design tool (Figma, etc.).
-4.  **Commit:** Save the Mermaid structure in a `.md` file and the mockup image (if applicable) in the `docs/VIEWS/` directory.
-
----
-
 ### 🛠 Maintenance & Changes
 
 Visual designs are part of the project specification and must follow the same version control discipline as text documents:

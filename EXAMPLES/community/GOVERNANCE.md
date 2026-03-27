@@ -17,7 +17,7 @@ The Project Owner is the ultimate authority on the project's strategic direction
 ### 🛡️ Maintainers
 Maintainers are trusted contributors responsible for the day-to-day health of the codebase.
 *   **Quality Control:** Authorized to review and merge Pull Requests into the `main` branch.
-*   **Orchestration:** Responsible for managing the [**Kanban Board**](../../WORKFLOW/11_the_kanban_process.md) and ensuring Issues are correctly labeled and ordered.
+*   **Orchestration:** Responsible for managing the **[Kanban Board]** and ensuring Issues are correctly labeled and ordered.
 *   **Mentorship:** Guides Contributors through the [**Design-First lifecycle**](../../WORKFLOW/02_lifecycle.md).
 
 ### 🧑‍💻 Contributors
@@ -39,7 +39,7 @@ We prioritize **Technical Consensus** but value **Execution Momentum**.
 ---
 
 ## 3. Communication Channels
-*   **Official Discussions:** [Insert Link to GitHub Discussions / Slack / Discord]
+*   **Official Discussions:** **[Insert Link to GitHub Discussions / Slack / Discord]**
 *   **Security Vulnerabilities:** Do not open public issues for security flaws. Please email **[INSERT CONTACT EMAIL]** directly.
 
 ---

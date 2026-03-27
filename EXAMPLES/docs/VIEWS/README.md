@@ -30,8 +30,8 @@
 | Specification | Visual Source | Description | Target User Story |
 | :--- | :--- | :--- | :--- |
 | [`00_template.md`](./00_template.md) | N/A | Master blueprint | N/A |
-| [`US01_dashboard.md`](./US01_dashboard.md) | [View Asset](./US01_dashboard.png) | Main landing view | [US-01](../PRD/02_user_stories.md) |
-| [`US02_login_form.md`](./US02_login_form.md) | [View Asset](./US02_login_form.png) | Auth interface | [US-02](../PRD/02_user_stories.md) |
+| `US01_dashboard.md` | [View Asset] | Main landing view | [US-01](../PRD/02_user_stories.md) |
+| `US02_login_form.md` | [View Asset] | Auth interface | [US-02](../PRD/02_user_stories.md) |
 
 ---
 

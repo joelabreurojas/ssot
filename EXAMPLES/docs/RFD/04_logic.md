@@ -64,10 +64,10 @@ This document outlines the pure business logic, domain services, and process orc
 
 ```mermaid
 stateDiagram-v2
-    [*] --> [State A]
-    [State A] --> [State B] : [Action/Trigger]
-    [State B] --> [*] : [Action/Trigger]
-    [State B] --> [ErrorState] : [Failure]
+    [*] --> StateA
+    StateA --> StateB : Action/Trigger
+    StateB --> [*] : Action/Trigger
+    StateB --> ErrorStateA : Failure
 ```
 
 ---
