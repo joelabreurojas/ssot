@@ -1,58 +1,77 @@
 # View: [Screen Name]
 
-**Associated User Story:** [e.g., US-01]  
+**Associated User Story:** [e.g., US-XX]  
 **Device Target:** [e.g., Desktop / Mobile / Responsive]
 
 ---
 
 ## 1. Information Architecture (Structure)
 <!-- 
-    Define the hierarchy and layout of the screen using text or diagrams.
-    Focus on WHAT is on the screen, not HOW it looks.
+    Define the spatial layout and component hierarchy. 
+    The ASCII map below provides the blueprint for functional zones.
 -->
 
-### Core Components
-*   **[Component A]:** [e.g., Global Navigation Bar containing Logo, Search, and Profile].
-*   **[Component B]:** [e.g., Main Sidebar with Navigation Links].
-*   **[Component C]:** [e.g., Central Feed displaying a list of Items].
-
-### Structural Wireframe
-<!-- 
-    Use a Mermaid Flowchart or ASCII to represent the layout logic.
--->
-```mermaid
-graph TD
-    subgraph Header
-        H1[Logo] --- H2[Search Bar] --- H3[User Profile]
-    end
-    subgraph Body
-        B1[Sidebar] --- B2[Main Content Area]
-    end
-    subgraph Footer
-        F1[Copyright] --- F2[Terms of Service]
-    end
+### 🗺️ Structural Wireframe (Spatial Map)
+```text
++---------------------------------------------------------------------------------------+
+| [A] BRANDING [B] [Global Search... (Shortcut)]          [Global Utilities] [C] [User] |
++------------+--------------------------------------------------------------------------+
+|            |                                                                          |
+| [D] PRIMARY| [G] Breadcrumbs > **VIEW TITLE**                   [Actions] [Utilities] |
+|    ACTION  |                                                                          |
+|            +--------------------------------------------------------------------------+
+| [E] MAIN   |                                                                          |
+|     NAV    | [H] [Local Search...   ] [Filter V] [Sort V]            [Layout Toggles] |
+| > Link 1   |                                                                          |
+| > Link 2   | +----------------------------------------------------------------------+ |
+| > Link 3   | | DATA HEADER / ATTRIBUTE LABELS                                       | |
+|            | |---------------------|---------------|---------------|----------------| |
+| ---------- | | [ ] Record Entry A  | [● Status   ] | Data Field    | Metadata       | |
+| [F] CONTEXT| | [ ] Record Entry B  | [○ Status   ] | Data Field    | Metadata       | |
+|     AREA   | | [ ] Record Entry C  | [● Status   ] | Data Field    | Metadata       | |
+| (Recents / | |                                                                      | |
+|  Folders)  | +----------------------------------------------------------------------+ |
+|            |                                                                          |
+| [ < ] COLL.| [Display Summary / Count]             [ < Prev ] [ 1 ]  2  3  [ Next > ] |
++------------+--------------------------------------------------------------------------+
+| [vX.X.X]   | [System Status / Environment]                  [Help] [Legal] [Config V] |
++------------+--------------------------------------------------------------------------+
 ```
+
+### 🧱 Component Inventory & Functional Specification
+| ID | Component | Responsibility / Logic |
+| :--- | :--- | :--- |
+| **A** | **Branding** | Identity/Logo; defines the link back to the primary landing page. |
+| **B** | **Global Search** | System-wide search functionality and keyboard access logic. |
+| **C** | **User Profile** | Personalization hub; handles settings, profile access, and logout. |
+| **D** | **Primary Action** | The highest-priority CTA (Call to Action) for this view's context. |
+| **E** | **Main Nav** | Primary navigation links to major modules/domains. |
+| **F** | **Context Area** | Sub-navigation or context-specific items (e.g., recents, favorites). |
+| **G** | **View Header** | Contextual orientation (Breadcrumbs) and view-level actions. |
+| **H** | **View Controls** | Mechanisms for manipulating the specific data set shown in [I]. |
+| **I** | **Content Canvas** | The primary payload of the view (e.g., Table, Feed, Graph, Form). |
+| **J** | **System Footer** | Metadata (versioning, health) and persistent secondary links. |
 
 ---
 
 ## 2. Interaction Logic & User Flow
 <!-- 
-    Describe how the user interacts with this specific view.
+    Describe how the user interacts with the logic of this specific screen.
 -->
-*   **Primary Action:** [e.g., Clicking 'Submit' validates the form and sends a POST request].
-*   **Navigation:** [e.g., Clicking an item in the feed navigates the user to the Detail View].
-*   **Dynamic Behavior:** [e.g., The sidebar collapses on mobile devices].
+*   **Initialization:** [What happens when the user lands here? e.g., Trigger fetch for Zone I].
+*   **Navigation Flow:** [How does clicking components change the view or state?].
+*   **Data Lifecycle:** [How are creates/updates handled within the UI components?].
 
 ---
 
 ## 3. State Specifications
 <!-- 
-    Describe the UI requirements for different application states.
+    Define the UI behavior for the four standard states.
 -->
-*   **Initial / Empty:** [What is shown when there is no data? e.g., A "Get Started" illustration].
-*   **Loading:** [e.g., Skeleton loaders for the feed items].
-*   **Error:** [e.g., A red toast notification for network failures].
-*   **Success:** [e.g., A green checkmark animation upon successful save].
+*   **Initial / Empty:** [What is displayed when no data is present in Zone I?].
+*   **Loading:** [How is the waiting state represented? e.g., Skeletons, spinners].
+*   **Error:** [How are failures (network, validation) displayed to the user?].
+*   **Success:** [How is a completed action confirmed?].
 
 ---
 
@@ -60,7 +79,7 @@ graph TD
 <!-- 
     Link to high-fidelity designs or screenshots here.
 -->
-*   **Visual Mockup:** `[Link to screenshot in this folder or external Figma frame]`
+*   **High-Fidelity Mockup:** `[Link to Figma Frame / Penpot / Image Asset]`
 
 ---
-*Maintenance Note: This document must be updated if the layout logic changes. It serves as the technical requirement for the Frontend implementation.*
+*Maintenance Note: This text-based wireframe is the authority for the Frontend implementation. Spatial changes or functional zone additions must be updated here via Pull Request.*
