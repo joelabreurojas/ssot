@@ -1,3 +1,8 @@
+---
+name: ""
+about: ""
+title: ""
+---
 ### ⚠️ This PR is stacked on top of another PR. ⚠️
 **Depends on:** #[Insert Base PR Number]
 **Review Order:** Please review and merge the PR above **before** reviewing this one in detail.

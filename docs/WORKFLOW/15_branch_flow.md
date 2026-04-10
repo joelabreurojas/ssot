@@ -54,3 +54,6 @@ These branches are "free" from the standard Execution Order, but must still adhe
     *   *Freedom:* Can jump to the front of the queue, ignoring the current Roadmap.
 *   **Refactor (`refactor/`):** Used for cleaning up code without adding features or changing behavior.
     *   *Rule:* Must have 100% test coverage before merging.
+
+---
+*Note: For solo projects, the 'Require approvals' setting in GitHub may be disabled to allow merging, but 'Require status checks to pass' remains mandatory. The Pull Request remains the only entry point to main.*

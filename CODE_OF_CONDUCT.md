@@ -54,7 +54,7 @@ representative at an online or offline event.
 
 ## Enforcement
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported to the project maintainers at **[INSERT CONTACT EMAIL]**.
+reported to the project maintainers at [**INSERT CONTACT EMAIL**].
 All complaints will be reviewed and investigated promptly and fairly.
 
 All maintainers are obligated to respect the privacy and security of the

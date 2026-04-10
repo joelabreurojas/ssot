@@ -30,7 +30,7 @@ While strict TDD (writing the test *before* the code) is not strictly mandatory 
 We measure Code Coverage (the percentage of our codebase executed by tests), but we treat it as a tool for discovery, not a vanity metric.
 
 *   **Target Coverage:** We aim for **> 80% coverage on core business logic** (The Application/Domain layer). 
-*   **The Pragmatic Exception:** We do not mandate 100% coverage. Testing every getter/setter or UI layout pixel often leads to brittle tests that break on minor refactors. Focus tests on the complex logic defined in the [RFD (04_logic.md)](../EXAMPLES/docs/RFD/04_logic.md).
+*   **The Pragmatic Exception:** We do not mandate 100% coverage. Testing every getter/setter or UI layout pixel often leads to brittle tests that break on minor refactors. Focus tests on the complex logic defined in the [RFD (04_logic.md)](../RFD/04_logic.md).
 *   **CI Enforcement:** The CI pipeline will automatically fail if a Pull Request significantly drops the overall project coverage percentage.
 
 ---

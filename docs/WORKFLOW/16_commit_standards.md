@@ -63,7 +63,7 @@ feat(ui): implement collapsible sidebar (#136)
 ---
 
 > [!NOTE]
-> To ensure consistency, use the provided template in `EXAMPLES/commits/git_commit_template.txt`. 
+> To ensure consistency, use the provided template in `.github/commits/git_commit_template.txt`. 
 >
 > Configure your local repository:
-`git config --local commit.template EXAMPLES/commits/git_commit_template.txt`
+`git config --local commit.template .github/commits/git_commit_template.txt`

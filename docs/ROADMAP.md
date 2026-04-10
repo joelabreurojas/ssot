@@ -13,7 +13,7 @@
 *   **[Milestone Name (e.g., M1: Core Foundation)]**
     *   **Objective:** [Brief summary of the business goal].
     *   **Status:** [In Development / RFD Phase]
-    *   **Link:** [PRD Entry](../docs/PRD/01_vision.md) | [RFD Folder](../docs/RFD/README.md)
+    *   **Link:** [PRD Entry](./PRD/01_vision.md) | [RFD Folder](./RFD/README.md)
 
 ---
 
@@ -23,7 +23,7 @@
 *   **[Milestone Name (e.g., M2: User Authentication)]**
     *   **Objective:** [Brief summary of the business goal].
     *   **Status:** PRD Approved
-    *   **Link:** [PRD Entry](../docs/PRD/02_user_stories.md)
+    *   **Link:** [PRD Entry](./PRD/02_user_stories.md)
 
 ---
 

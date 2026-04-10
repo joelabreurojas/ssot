@@ -19,7 +19,7 @@ All records are stored in `docs/ADR/` to serve as a chronological history of the
 
 ### 📝 Key Standards (The Anatomy of an ADR)
 
-Every ADR must follow the `000_template.md` (found in `EXAMPLES/docs/ADR/`) and include:
+Every ADR must follow the `000_template.md` and include:
 
 1.  **Status:**
     *   **Proposed:** The decision is currently under review in a Pull Request.

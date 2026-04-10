@@ -25,7 +25,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Initial MVP release.
 - [Core Feature A]: Complete implementation of the primary module.
-- Documentation: Full [Workflow Manual](../../WORKFLOW/README.md) and Design specs.
+- Documentation: Full [Workflow Manual](./WORKFLOW/README.md) and Design specs.
 
 ### Changed
 - [Component Name]: Description of a significant refactor or improvement.

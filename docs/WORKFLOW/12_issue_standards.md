@@ -6,7 +6,7 @@ An Issue is a **single Task** that belongs to a Milestone (Epic). It is a discre
 
 ### 📝 Required Fields for Planning
 
-When creating a Task (using the `issue_task_template.md`), the following fields are mandatory:
+When creating a Task for a Milestone, use the [**Task Template**](../milestones/issue_task_template.md), where the following fields are mandatory:
 
 1.  **Execution Order:** A numeric value (1, 2, 3...) indicating the **Strategic Priority**.
     *   *The Rule:* Developers should always focus on the lowest available numbers in the `Ready` column.

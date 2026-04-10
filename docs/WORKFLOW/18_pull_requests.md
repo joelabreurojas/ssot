@@ -5,7 +5,7 @@ A Pull Request (PR) is more than a request to merge code; it is a **story about 
 ---
 
 ### 1. Mandatory Structure
-Every PR must follow the standard structure established in the project templates (found in `EXAMPLES/pull_requests/`). The following sections are non-negotiable for a professional PR:
+Every PR must follow the standard structure established in the project templates (found in `.github/PULL_REQUEST_TEMPLATE/`). The following sections are non-negotiable for a professional PR:
 
 *   **Summary of Changes:** A high-level, one-sentence summary of the technical change.
 *   **Associated Issue:** A direct link to the task identifier (e.g., `Resolves #102`).
