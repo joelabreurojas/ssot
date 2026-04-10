@@ -1,85 +1,67 @@
 # View: [Screen Name]
 
-**Associated User Story:** [e.g., US-XX]  
-**Device Target:** [e.g., Desktop / Mobile / Responsive]
+**Associated User Story:** [e.g., US-01]  
+**Device Target:** [e.g., Desktop / Mobile Web / Native App]
 
 ---
 
-## 1. Information Architecture (Structure)
+## 1. AI Generation Prompt (The Master Prompt)
 <!-- 
-    Define the spatial layout and component hierarchy. 
-    The ASCII map below provides the blueprint for functional zones.
+    INSTRUCTIONS: Copy and paste this section directly into your AI UI generator 
+    (e.g., Google Stitch, v0.dev, Figma AI, Claude/GPT-4). 
+    Adjust the bracketed variables to match your specific screen.
 -->
 
-### 🗺️ Structural Wireframe (Spatial Map)
-```text
-+---------------------------------------------------------------------------------------+
-| [A] BRANDING [B] [Global Search... (Shortcut)]          [Global Utilities] [C] [User] |
-+------------+--------------------------------------------------------------------------+
-|            |                                                                          |
-| [D] PRIMARY| [G] Breadcrumbs > **VIEW TITLE**                   [Actions] [Utilities] |
-|    ACTION  |                                                                          |
-|            +--------------------------------------------------------------------------+
-| [E] MAIN   |                                                                          |
-|     NAV    | [H] [Local Search...   ] [Filter V] [Sort V]            [Layout Toggles] |
-| > Link 1   |                                                                          |
-| > Link 2   | +----------------------------------------------------------------------+ |
-| > Link 3   | | DATA HEADER / ATTRIBUTE LABELS                                       | |
-|            | |---------------------|---------------|---------------|----------------| |
-| ---------- | | [ ] Record Entry A  | [● Status   ] | Data Field    | Metadata       | |
-| [F] CONTEXT| | [ ] Record Entry B  | [○ Status   ] | Data Field    | Metadata       | |
-|     AREA   | | [ ] Record Entry C  | [● Status   ] | Data Field    | Metadata       | |
-| (Recents / | |                                                                      | |
-|  Folders)  | +----------------------------------------------------------------------+ |
-|            |                                                                          |
-| [ < ] COLL.| [Display Summary / Count]             [ < Prev ] [ 1 ]  2  3  [ Next > ] |
-+------------+--------------------------------------------------------------------------+
-| [vX.X.X]   | [System Status / Environment]                  [Help] [Legal] [Config V] |
-+------------+--------------------------------------------------------------------------+
-```
+**System Role:** Act as an expert UX/UI designer and frontend developer. Generate a high-fidelity, accessible UI component based on the following structural constraints.
 
-### 🧱 Component Inventory & Functional Specification
-| ID | Component | Responsibility / Logic |
+**Design System & Styling:**
+*   **Vibe/Theme:** [e.g., Minimalist, SaaS dashboard, high-contrast, modern, enterprise].
+*   **Framework/Library:** [e.g., Tailwind CSS, Material UI, Shadcn, plain HTML/CSS].
+*   **Color Palette:** [e.g., Primary blue, slate grays for backgrounds, semantic colors for alerts].
+
+**Information Architecture (Layout Logic):**
+*   **Container:** [e.g., Full-width screen with a sticky left sidebar and a top navigation bar].
+*   **Header Area:** [e.g., Needs a search input (with a Cmd+K shortcut hint), a notification bell, and a user avatar dropdown].
+*   **Sidebar Area:** [e.g., Vertical navigation menu with icons for 'Home', 'Projects', and 'Settings'].
+*   **Main Content Area:** [e.g., A breadcrumb trail at the top. Below that, a data table with 4 columns: Name, Status, Date, Owner. Include a pagination control at the bottom].
+
+**Interactive Behavior:**
+* [e.g., The table rows should have hover states. The 'Status' column should use colored badge indicators].
+
+---
+
+## 2. Component Data Binding (RFD Link)
+<!-- 
+    Map the UI components generated above to the actual data contracts defined in the RFD.
+    This prevents frontend developers from guessing where data comes from.
+-->
+
+| UI Component | Action / Event | Data Source (RFD Contract) |
 | :--- | :--- | :--- |
-| **A** | **Branding** | Identity/Logo; defines the link back to the primary landing page. |
-| **B** | **Global Search** | System-wide search functionality and keyboard access logic. |
-| **C** | **User Profile** | Personalization hub; handles settings, profile access, and logout. |
-| **D** | **Primary Action** | The highest-priority CTA (Call to Action) for this view's context. |
-| **E** | **Main Nav** | Primary navigation links to major modules/domains. |
-| **F** | **Context Area** | Sub-navigation or context-specific items (e.g., recents, favorites). |
-| **G** | **View Header** | Contextual orientation (Breadcrumbs) and view-level actions. |
-| **H** | **View Controls** | Mechanisms for manipulating the specific data set shown in [I]. |
-| **I** | **Content Canvas** | The primary payload of the view (e.g., Table, Feed, Graph, Form). |
-| **J** | **System Footer** | Metadata (versioning, health) and persistent secondary links. |
+| **Global Search** | `onChange` / `onSubmit` | `GET /api/v1/search?q={query}` |
+| **Main Data Table** | `onLoad` | `GET /api/v1/resources` (Returns `ResourceList` schema) |
+| **Create Button** | `onClick` (Opens Modal) | `POST /api/v1/resources` |
 
 ---
 
-## 2. Interaction Logic & User Flow
+## 3. UI State Specifications
 <!-- 
-    Describe how the user interacts with the logic of this specific screen.
+    The AI must generate (or the designer must account for) these specific states.
 -->
-*   **Initialization:** [What happens when the user lands here? e.g., Trigger fetch for Zone I].
-*   **Navigation Flow:** [How does clicking components change the view or state?].
-*   **Data Lifecycle:** [How are creates/updates handled within the UI components?].
+- [ ] **Empty State:** If the API returns no data for the Main Content Area, show an illustration and a prompt to "Create your first record."
+- [ ] **Loading State:** When fetching data, the Main Content Area should display skeleton row loaders. The Header and Sidebar remain interactive.
+- [ ] **Error State:** If the API fails, display a non-intrusive, dismissible red toast notification at the top right.
+- [ ] **Success State:** When the user completes the Primary Action, show a green confirmation badge.
 
 ---
 
-## 3. State Specifications
+## 4. Visual Assets & Output
 <!-- 
-    Define the UI behavior for the four standard states.
+    Once the AI generates the UI and the team refines it in the design tool,
+    link the final, approved asset here.
 -->
-*   **Initial / Empty:** [What is displayed when no data is present in Zone I?].
-*   **Loading:** [How is the waiting state represented? e.g., Skeletons, spinners].
-*   **Error:** [How are failures (network, validation) displayed to the user?].
-*   **Success:** [How is a completed action confirmed?].
+*   **Approved Figma / Design Link:** `[Insert Link Here]`
+*   *(Optional) Static Snapshot:* `![Screen Name Snapshot](./snapshot_US01.png)`
 
 ---
-
-## 4. Visual Assets
-<!-- 
-    Link to high-fidelity designs or screenshots here.
--->
-*   **High-Fidelity Mockup:** `[Link to Figma Frame / Penpot / Image Asset]`
-
----
-*Maintenance Note: This text-based wireframe is the authority for the Frontend implementation. Spatial changes or functional zone additions must be updated here via Pull Request.*
+*Maintenance Note: This specification is the contract for the Frontend implementation. If the layout structure or data bindings change, this document must be updated via a Pull Request.*
