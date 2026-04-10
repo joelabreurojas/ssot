@@ -36,9 +36,9 @@ We build atomically. Every contribution must follow this lifecycle:
 1.  **Design First:** If your task requires a technical pivot or a new architectural choice not covered in the **[RFD]**, you must first propose an [**ADR**](../../docs/ADR/000_template.md).
 2.  **Branch:** Create a branch from `main`: `[type]/[id]-[short-description]`.
 3.  **Code & Document:**
-    *   Write **Atomic Commits** following our [Commit Standards](../../WORKFLOW/13_commit_standards.md).
+    *   Write **Atomic Commits** following our [Commit Standards](../../WORKFLOW/16_commit_standards.md).
     *   **Logic over Code:** If you change system behavior, you **must** update the corresponding **[PRD]** or **[RFD]** files within the same Pull Request.
-4.  **Verify:** Ensure CI checks pass locally (`linter`, `tests`, `typing`).
+4.  **Verify:** Ensure CI checks pass locally (e.g., `linter`, `tests`, `typing`).
 5.  **Submit:** Open a Pull Request using our [Standard Template](../pull_requests/standard_pr_template.md).
 
 ---
@@ -52,7 +52,7 @@ If you introduce a bug or break the build, don't worry. We focus on **mitigation
 
 To have a Pull Request merged, it must meet these criteria:
 *   **Atomic Logic:** The PR solves exactly one Issue.
-*   **Documentation:** All technical pivots are recorded in an [ADR](../../WORKFLOW/14_adr_standards.md).
+*   **Documentation:** All technical pivots are recorded in an [ADR](../../WORKFLOW/17_adr_standards.md).
 *   **Green CI:** The pipeline must be 100% green (✅).
 *   **Peer Approval:** At least one Maintainer must approve the architectural approach.
 

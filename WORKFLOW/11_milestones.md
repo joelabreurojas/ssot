@@ -12,7 +12,7 @@ Every Milestone acts as a parent container for a group of related **Issues (Task
 
 1.  **Narrative Title:** The title must immediately identify the business domain being built.
     *   *Examples:* `M1: Core Infrastructure`, `M2: User Authentication`, `M3: Payment Integration`.
-2.  **The "Now" Requirement:** A Milestone can only be initialized and populated with Tasks once it has moved into the **🟢 NOW** column of the [**Roadmap**](./05_roadmap_standards.md).
+2.  **The "Now" Requirement:** A Milestone can only be initialized and populated with Tasks once it has moved into the **🟢 NOW** column of the [**Roadmap**](./08_roadmap_standards.md).
 3.  **Vertical Slice Progression:** To fulfill a Module, we build through the architectural layers in sequence:
     1.  **Data Layer:** Schemas, models, and migrations.
     2.  **Logic Layer:** Core business services and rules.
@@ -41,4 +41,4 @@ A Milestone is considered complete only when it meets the following criteria:
 ---
 
 ### 🚀 Selecting Work
-When a Milestone is active, developers pick the next available Task based on the **Execution Order** and **Dependency** logic defined in the [**Issue Standards**](./09_issue_standards.md).
+When a Milestone is active, developers pick the next available Task based on the **Execution Order** and **Dependency** logic defined in the [**Issue Standards**](./12_issue_standards.md).

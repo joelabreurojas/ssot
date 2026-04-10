@@ -15,7 +15,7 @@ Priority labels define the order of attention and the "Critical Path" of the Mil
 ---
 
 ### 2. Type (Nature of the Work)
-Type labels describe the specific activity the developer will be performing. These map 1:1 to the prefixes used in our [Commit Standards](./13_commit_standards.md).
+Type labels describe the specific activity the developer will be performing. These map 1:1 to the prefixes used in our [Commit Standards](./16_commit_standards.md).
 
 *   ✨ **`type:feature`** (`#a2eeef`) - New functionality or core business logic.
 *   🐞 **`type:bug`** (`#d73a4a`) - Correction of unintended or incorrect behavior.

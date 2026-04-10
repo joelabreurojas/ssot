@@ -42,7 +42,7 @@ graph TD
 2. [**Data Model**](./02_data_model.md): Storage, schemas, and integrity.
 3. [**Interface Design**](./03_interface.md): Communication contracts (API/Web).
 4. [**Logic & Services**](./04_logic.md): Business rules and service signatures.
-5. [**Ops & Security**](./05_ops_and_security.md): Testing, deployment, and secrets.
+5. [**Ops & Security**](./05_ops_security_quality.md): Testing, deployment, and secrets.
 
 ---
 *Maintenance Note: Any change to a sub-file requires the 'Current State' here to be set to 'Proposed' in the PR, and flipped to 'Accepted' upon merge.*

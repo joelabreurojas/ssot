@@ -10,7 +10,7 @@ This document outlines the roles, responsibilities, and decision-making processe
 
 ### 👑 Project Owner (PO)
 The Project Owner is the ultimate authority on the project's strategic direction.
-*   **Strategic Authority:** Owns the [**PRD**](../../WORKFLOW/04_prd_standards.md) and the [**Roadmap**](../../WORKFLOW/05_roadmap_standards.md).
+*   **Strategic Authority:** Owns the [**PRD**](../../WORKFLOW/07_prd_standards.md) and the [**Roadmap**](../../WORKFLOW/08_roadmap_standards.md).
 *   **The Gatekeeper:** Approves when a Milestone moves from 'NEXT' to 'NOW' on the Roadmap (officially locking requirements and triggering technical design).
 *   **Conflict Resolution:** Acts as the final decision-maker in the event of a stalemate in technical or product discussions.
 
@@ -22,7 +22,7 @@ Maintainers are trusted contributors responsible for the day-to-day health of th
 
 ### 🧑‍💻 Contributors
 Anyone who improves the project through code, documentation, or feedback.
-*   **Responsibilities:** Following the [**Commit Standards**](../../WORKFLOW/13_commit_standards.md) and participating in the peer-review process.
+*   **Responsibilities:** Following the [**Commit Standards**](../../WORKFLOW/16_commit_standards.md) and participating in the peer-review process.
 *   **Advancement:** Contributors who consistently deliver high-quality work and demonstrate a "system-first" mindset may be invited to become Maintainers.
 
 ---
@@ -32,8 +32,8 @@ Anyone who improves the project through code, documentation, or feedback.
 We prioritize **Technical Consensus** but value **Execution Momentum**.
 
 1.  **Product Decisions:** Changes to the "What" are proposed in the PRD folder and must be accepted by the Project Owner.
-2.  **Architectural Decisions:** Significant technical choices are proposed via a [**Request for Design (RFD)**](../../WORKFLOW/06_rfd_standards.md).
-3.  **Implementation Pivots:** Choices made during coding that deviate from the design are recorded in [**ADRs**](../../WORKFLOW/14_adr_standards.md).
+2.  **Architectural Decisions:** Significant technical choices are proposed via a [**Request for Design (RFD)**](../../WORKFLOW/09_rfd_standards.md).
+3.  **Implementation Pivots:** Choices made during coding that deviate from the design are recorded in [**ADRs**](../../WORKFLOW/17_adr_standards.md).
 4.  **Stalemates:** If Maintainers cannot reach an agreement on a PR or RFD, the Project Owner will make the final determination based on the documented rationales and project principles.
 
 ---
