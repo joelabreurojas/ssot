@@ -1,4 +1,4 @@
-# Contributing to [**Project Name**]
+# Contributing to the Project
 
 First off, thank you for taking the time to contribute! 🎉 
 

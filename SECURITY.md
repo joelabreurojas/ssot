@@ -1,7 +1,7 @@
 # Security Policy
 
 ## 🛡️ Our Commitment to Security
-At **[Project Name]**, we take the security of our users and data seriously. We operate under a **Blameless Security Culture**, where we prioritize identifying and fixing system vulnerabilities over individual blame. We appreciate the efforts of security researchers who help us maintain a robust and secure ecosystem.
+We operate under a **Blameless Security Culture**, where we prioritize identifying and fixing system vulnerabilities over individual blame. We appreciate the efforts of security researchers who help us maintain a robust and secure ecosystem.
 
 ---
 

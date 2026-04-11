@@ -13,6 +13,10 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
+        with:
+          # fetch-depth: 0 is required for Gitleaks to scan the 
+          # commit history correctly.
+          fetch-depth: 0
 
       # --- ARTIFACT GENERATION ---
       # This step packages your code. 
