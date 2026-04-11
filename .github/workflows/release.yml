@@ -1,0 +1,35 @@
+name: Production Release
+
+on:
+  push:
+    tags:
+      - 'v*' # Triggers on any tag starting with 'v'
+
+jobs:
+  create-release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      # --- ARTIFACT GENERATION ---
+      # This step packages your code. 
+      # Examples: zip files, binaries, minified assets.
+      - name: Build Release Artifacts
+        run: |
+          mkdir -p dist
+          tar -czvf dist/release-assets.tar.gz . --exclude=.git
+        
+      # --- RELEASE CREATION ---
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          # Automatically generates notes by comparing with the previous tag.
+          # To follow SSOT exactly, you can also point this to your CHANGELOG.md content.
+          generate_release_notes: true
+          files: |
+            dist/release-assets.tar.gz
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

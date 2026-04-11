@@ -1,0 +1,34 @@
+name: CI Quality Gate
+
+on:
+  pull_request:
+    branches: [ main ]
+  push:
+    branches: [ main ]
+
+jobs:
+  quality-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      # --- LINTING & FORMATTING ---
+      # Replace with your tech-specific linter (e.g., ruff, eslint, golangci-lint)
+      - name: Run Linters
+        run: echo "Executing static analysis and formatting checks..."
+
+      # --- SECURITY SCANNING ---
+      - name: Run Secret Scanning
+        uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # --- TESTING ---
+      # Replace with your test command (e.g., pytest, npm test, cargo test)
+      - name: Run Automated Tests
+        run: echo "Executing test suite based on WORKFLOW Chapter 06..."
+
+      # --- BUILD VERIFICATION ---
+      - name: Verify Build
+        run: echo "Ensuring the application compiles/builds successfully..."
