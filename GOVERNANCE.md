@@ -2,7 +2,7 @@
 
 > _Transparency in leadership and strategic decision-making._
 
-This document outlines the roles, responsibilities, and decision-making processes for [**Project Name**]. Our goal is to ensure the project remains stable, secure, and aligned with its core mission while fostering a collaborative, blameless environment.
+This document outlines the roles, responsibilities, and decision-making processes for the project. Our goal is to ensure the project remains stable, secure, and aligned with its core mission while fostering a collaborative, blameless environment.
 
 ---
 

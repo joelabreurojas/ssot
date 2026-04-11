@@ -1,4 +1,4 @@
-# Product Requirements Document (PRD): [Project Name]
+# Product Requirements Document (PRD):
 
 ## 1. Project Status
 *   **Current State:** [Proposed | Accepted]

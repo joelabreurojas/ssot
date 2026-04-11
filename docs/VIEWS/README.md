@@ -1,4 +1,4 @@
-# UI/UX Views Gallery: [Project Name]
+# UI/UX Views Gallery:
 
 ## 1. Project Status
 *   **Current State:** [Proposed | Accepted]
