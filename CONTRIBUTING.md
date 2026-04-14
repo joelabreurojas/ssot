@@ -52,7 +52,7 @@ If you introduce a bug or break the build, don't worry. We focus on **mitigation
 
 To have a Pull Request merged, it must meet these criteria:
 *   **Atomic Logic:** The PR solves exactly one Issue.
-*   **Documentation:** All technical pivots are recorded in an [ADR](../../WORKFLOW/17_adr_standards.md).
+*   **Documentation:** All technical pivots are recorded in an [ADR](/docs/WORKFLOW/17_adr_standards.md).
 *   **Green CI:** The pipeline must be 100% green (✅).
 *   **Peer Approval:** At least one Maintainer must approve the architectural approach.
 

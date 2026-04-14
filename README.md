@@ -29,7 +29,7 @@ The **SSOT (Single Source of Truth)** is an opinionated engineering standard des
 - Use "Just-In-Time" design to focus engineering effort only on immediate Roadmap priorities.
 - Leverage AI-driven UI generation and GitHub automation to accelerate development.
 - Operate under a **Blameless Culture** that prioritizes system improvements over individual blame.
-- And more!
+- ...and more!
 
 &nbsp;
 
@@ -87,7 +87,7 @@ The official 19-chapter manual that defines our constitution.
 *   **Phase 4: Review & Delivery** (Pull Requests, Release Automation)
 
 > [!IMPORTANT]
-> 👉 **[Read the Workflow Manual here.](/WORKFLOW/README.md)**
+> 👉 **[Read the Workflow Manual here.](/docs/WORKFLOW/README.md)**
 
 **2. Blueprints**
 "Plug-and-play" templates for project planning:
