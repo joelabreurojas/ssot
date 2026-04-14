@@ -11,6 +11,8 @@
     *   *Rationale:* [What data is cached and why? (e.g., User sessions, rate limits)]
 *   **Blob / Object Storage:** [e.g., AWS S3 / Local File System]
     *   *Rationale:* [Where do user uploads, images, or large documents live?]
+*   **Vector / Search Store (If applicable):** [e.g., Pinecone / Elasticsearch]
+    *   *Rationale:* [Why is a specialized search index required?]
 
 ---
 
@@ -65,7 +67,7 @@ erDiagram
 
 ---
 
-## 5. Indexing Strategy
+## 5. Indexing & Access Patterns
 <!-- 
     How do we ensure queries remain fast as the dataset grows?
 -->
@@ -74,3 +76,24 @@ erDiagram
     *   `Entity.field`: [Type of index, e.g., B-Tree, GIN, Hash]. 
     *   `Entity.(field_A, field_B)`: [Compound Index for specific filters].
 *   **Partitioning / Sharding (If applicable):** [How is the data split for scale?]
+
+---
+
+## 6. Data Lifecycle & Archival Strategy
+<!-- 
+    Data is a liability. Define how it enters, ages, and exits the system.
+-->
+*   **Ingestion & Mutation:** [How is data validated and transformed before entry?]
+*   **Retention Policy (TTL):** [How long does data remain in the 'Hot' store? e.g., "Logs are moved to archival after 30 days."]
+*   **Archival & Cold Storage:** [What happens to old data? Is it compressed, moved to S3, or deleted?]
+*   **Deletion / Anonymization:** [The protocol for permanent removal (e.g., GDPR 'Right to be forgotten'). Are deletes hard or soft?]
+
+---
+
+## 7. Operational Ceilings & Performance Targets
+<!-- 
+    Identify the "breaking point" of this data design.
+-->
+*   **Maximum Throughput:** [Estimated max concurrent writes/reads per second before latency exceeds SLA.]
+*   **Storage Limits:** [At what volume (e.g., 100M rows) does this index strategy require refactoring?]
+*   **Latency SLA:** [Target query response time, e.g., < 100ms for primary keys.]

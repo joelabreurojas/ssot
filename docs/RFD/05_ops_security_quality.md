@@ -1,6 +1,6 @@
 # Operations, Security & Quality Assurance
 
-This document defines the strategy for ensuring the system's integrity, security, and the reliable delivery of value to the end environment.
+This document defines the strategy for ensuring the system's integrity, security posture, and the reliable delivery of value. We design for observability and resilience, ensuring that "if it isn't visible, it isn't working."
 
 ---
 
@@ -21,6 +21,14 @@ This document defines the strategy for ensuring the system's integrity, security
 ### 1.3 Boundary & Access Security
 *   **Surface Area Reduction:** [How do we limit the ways an attacker can interact with the system? e.g., "Private network segments, minimized public entry points."]
 *   **Access Control:** [The policy for internal and external access. e.g., "Principle of Least Privilege (PoLP) enforced across all interfaces."]
+
+### 1.4 Threat Modeling (Worst-Case Scenario)
+<!-- 
+    Proactively analyze the impact of a security failure.
+-->
+*   **Blast Radius Analysis:** [e.g., "If the API service is compromised, the attacker gains read access to 'Users' but cannot access the 'Payments' vault due to logical isolation."]
+*   **Compromise Mitigation:** [What is the immediate protocol to isolate a compromised component?]
+*   **Recovery Protocol:** [How do we perform a 'Clean Room' restoration of the system and its data?]
 
 ---
 
@@ -64,14 +72,18 @@ This document defines the strategy for ensuring the system's integrity, security
     handle incidents once it is live?
 -->
 
-### 4.1 Signaling & Logging
+### 4.1 Distributed Tracing & APM
+*   **Correlation IDs:** [e.g., "100% of requests must generate a unique Trace ID at the boundary, which is propagated across all internal service calls."]
+*   **APM Tooling:** [e.g., "OpenTelemetry / Datadog / LangSmith for distributed trace visualization."]
+
+### 4.2 Signaling & Logging
 *   **Standardized Output:** [The format and structure of system events. e.g., "Structured logs for machine-readability."]
 *   **Collection & Centralization:** [Where does system health data go for analysis?]
 
-### 4.2 Health Monitoring & Metrics
+### 4.3 Health Monitoring & Metrics
 *   **Vital Signs:** [What key indicators prove the system is working? e.g., "Error rates, latency, resource utilization, successful transaction counts."]
 *   **Availability Probes:** [How do we verify the system is reachable and responsive?]
 
-### 4.3 Alerting & Incident Response
+### 4.4 Alerting & Incident Response
 *   **Notification Policy:** [When should a human be notified? e.g., "Sustained failure rates exceeding [X]%."]
 *   **Response Protocol:** [Where are notifications sent and what is the expected initial response?]
