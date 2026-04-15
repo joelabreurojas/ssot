@@ -1,0 +1,21 @@
+# INSTRUCTIONS FOR NEW PROJECTS:
+# 1. Rename this file from 'CODEOWNERS.example' to 'CODEOWNERS'.
+# 2. Replace '@ProjectOwnerHandle' with the GitHub username or Team handle 
+#    (e.g., @my-org/security-team) of the person/group responsible for this repository.
+# 
+# Purpose: Modifications to the files and directories listed below will require 
+# explicit approval from the designated owners. This prevents unauthorized or 
+# accidental bypassing of CI/CD pipelines, security scans, or community standards.
+
+# Protect CI/CD pipelines and automation
+/.github/workflows/             @ProjectOwnerHandle
+
+# Protect GitHub templates and configuration
+/.github/ISSUE_TEMPLATE/        @ProjectOwnerHandle
+/.github/PULL_REQUEST_TEMPLATE/ @ProjectOwnerHandle
+/.github/CODEOWNERS             @ProjectOwnerHandle
+
+# Protect community and security contracts
+/CONTRIBUTING.md                @ProjectOwnerHandle
+/SECURITY.md                    @ProjectOwnerHandle
+/GOVERNANCE.md                  @ProjectOwnerHandle
