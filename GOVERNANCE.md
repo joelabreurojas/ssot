@@ -40,7 +40,7 @@ We prioritize **Technical Consensus** but value **Execution Momentum**.
 
 ## 3. Communication Channels
 *   **Official Discussions:** [**Insert Link to GitHub Discussions / Slack / Discord**]
-*   **Security Vulnerabilities:** Do not open public issues for security flaws. Please email [**INSERT CONTACT EMAIL**] directly.
+*   **Security Vulnerabilities:** Do not open public issues for security flaws. Please check our [**Security Policy**](/SECURITY)` for details.
 
 ---
 *This governance model is designed to be lean, prioritizing the "Keep It Simple" philosophy while ensuring every change is intentional and documented.*
